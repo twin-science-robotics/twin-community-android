@@ -1,6 +1,39 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <color name="colorPrimary">#008577</color>
+    <color name="colorPrimary_transparent">#82003b33</color>
     <color name="colorPrimaryDark">#00574B</color>
     <color name="colorAccent">#D81B60</color>
+
+    <color name="very_light_pink">#cccccc</color>
+    <color name="aquamarine">#23F0C7</color>
+    <color name="splash_bg">#05968b</color>
+    <color name="aquamarine_transparent">#CC03D8C8</color>
+    <color name="grey_bg">#f2f2f2</color>
+    <color name="lightblue">#6dc3ed</color>
+    <color name="lighblue_45">#736dc3ed</color>
+    <color name="light_navy_blue">#293d7c</color>
+    <color name="light_navy_blue_transparent">#65293d7c</color>
+    <color name="yellowish_orange">#ffaf10</color>
+    <color name="greyish_brown_45">#734c4c4c</color>
+    <color name="pale_turquoise">#9dfcec</color>
+    <color name="pale_turquoise_transparent">#CC9DFCEC</color>
+    <color name="darker_gray">#ebebeb</color>
+    <color name="white">#ffffff</color>
+    <color name="dasad">#ffffff</color>
+    <color name="filtered_white">#80FFFFFF</color>
+    <color name="greyish_brown">#4c4c4c</color>
+    <color name="salmon_pink">#CCFF787F</color>
+    <color name="white_two">#f0f0f0</color>
+    <color name="wheat">#ffd782</color>
+    <color name="pale_purple">#CCB69AD6</color>
+    <color name="teal">#05968b</color>
+    <color name="light_blue_grey">#d0efed</color>
+    <color name="greyish_brown_40">#664c4c4c</color>
+    <color name="greyish_brown_50">#804c4c4c</color>
+    <color name="white_three">#fefefe</color>
+    <color name="ds">#4D97FF</color>
+    <color name="third_purple">#CC8F83AA</color>
+    <color name="project_yellow">#CCFDD387</color>
+    <color name="project_green">#CC8AD570</color>
 </resources>

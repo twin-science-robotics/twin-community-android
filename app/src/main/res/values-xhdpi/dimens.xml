@@ -1,0 +1,28 @@
+<resources>
+	<dimen name="kit_padding">2dp</dimen>
+	<dimen name="padding_null">0dp</dimen>
+	<dimen name="dialog_button_width">140dp</dimen>
+	<dimen name="fragment_header">23.3sp</dimen>
+	<dimen name="experiment_name">15.9sp</dimen>
+	<dimen name="experiment_details">13.8sp</dimen>
+	<dimen name="adapter_item_name">16.4sp</dimen>
+	<dimen name="fragment_button">15.4sp</dimen>
+	<dimen name="project_name">16.5sp</dimen>
+	<dimen name="project_date">17.6sp</dimen>
+	<dimen name="dialog_button">17.6sp</dimen>
+	<dimen name="fragment_large_button">15.9sp</dimen>
+	<dimen name="fragment_text">15.4sp</dimen>
+	<dimen name="dialog_title">17.6sp</dimen>
+	<dimen name="auth_title">26.4sp</dimen>
+	<dimen name="fragment_title">18.7sp</dimen>
+	<dimen name="fragment_details">17.6sp</dimen>
+	<dimen name="min_image_width">198dp</dimen>
+	<dimen name="min_item_width">187dp</dimen>
+	<dimen name="auth_content_size">15.4sp</dimen>
+	<dimen name="tv_mail_permission_size">12.5sp</dimen>
+	<dimen name="forgot_password">14.2sp</dimen>
+	<dimen name="btn_back_text_size">15.3sp</dimen>
+	<dimen name="text_input_size">15.3sp</dimen>
+	<dimen name="pager_step_button_width">90.9dp</dimen>
+	<dimen name="min_lang_width">135dp</dimen>
+</resources>
