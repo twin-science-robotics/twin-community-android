@@ -9,6 +9,11 @@ import androidx.fragment.app.Fragment
  */
 abstract class BaseFragment : Fragment() {
 
+
+
+    /**
+     * Observes initialized or updated LiveData values from ViewModels
+     */
     protected abstract fun observeViewModel()
 
 }
