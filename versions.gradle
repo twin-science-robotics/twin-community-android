@@ -43,6 +43,7 @@ versions.rxpermissions = "0.9.5@aar"
 versions.seismic = "1.0.2"
 versions.data_binding = "3.2.0-alpha16"
 versions.gson = "2.8.5"
+versions.retrofit = "2.5.0"
 
 /*------------Default Config-----------------*/
 versions.applicationId = "com.twinscience.twin.lite.android"
@@ -106,6 +107,10 @@ navigation.fragment = "androidx.navigation:navigation-fragment:$versions.navigat
 navigation.ui = "androidx.navigation:navigation-ui:$versions.navigation"
 navigation.safe_args = "androidx.navigation:navigation-safe-args-gradle-plugin:$versions.navigation"
 deps.navigation = navigation
+
+def retrofit = [:]
+retrofit.moshi = "com.squareup.retrofit2:converter-moshi:$versions.retrofit"
+deps.retrofit = retrofit
 
 //Independent libs
 deps.rxjava2 = "io.reactivex.rxjava2:rxjava:$versions.rxjava2"
