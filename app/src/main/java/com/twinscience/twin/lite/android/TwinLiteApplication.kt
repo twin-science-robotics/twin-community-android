@@ -9,7 +9,7 @@ import com.twinscience.twin.lite.android.di.DaggerAppComponent
 
 /**
  * Created by mertselcukdemir on 9.10.2018
- * Copyright (c) 2018 YGA to present
+ * Copyright (c) 2018 Twin Science & Robotics to present
  * All rights reserved.
  */
 class TwinLiteApplication : Application() {

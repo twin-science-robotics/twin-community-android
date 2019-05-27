@@ -7,7 +7,7 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.navigation.Navigation.findNavController
-import com.twinscience.twin.lite.android.MainActivity
+import com.twinscience.twin.lite.android.main.MainActivity
 import com.twinscience.twin.lite.android.R
 import com.twinscience.twin.lite.android.base.BaseFragment
 

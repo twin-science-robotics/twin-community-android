@@ -13,7 +13,7 @@ import javax.inject.Singleton
 
 /**
  * Created by mertselcukdemir on 6.04.2018
- * Copyright (c) 2018 YGA to present
+ * Copyright (c) 2018 Twin Science & Robotics to present
  * All rights reserved.
  */
 @Singleton

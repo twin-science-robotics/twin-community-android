@@ -4,7 +4,7 @@ import com.squareup.moshi.Json
 
 /**
  * Created by mertselcukdemir on 5.04.2019
- * Copyright (c) 2019 YGA to present
+ * Copyright (c) 2019 Twin Science & Robotics to present
  * All rights reserved.
  */
 data class ProjectResponse(

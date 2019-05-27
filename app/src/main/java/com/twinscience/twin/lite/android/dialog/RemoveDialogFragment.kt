@@ -13,7 +13,7 @@ import com.twinscience.twin.lite.android.utils.ScreenUtils
 
 /**
  * Created by mertselcukdemir on 10.10.2018
- * Copyright (c) 2018 YGA to present
+ * Copyright (c) 2018 Twin Science & Robotics to present
  * All rights reserved.
  */
 class RemoveDialogFragment : DialogFragment() {

@@ -6,7 +6,7 @@ import android.view.inputmethod.InputMethodManager
 
 /**
  * Created by mertselcukdemir on 29.03.2019
- * Copyright (c) 2019 YGA to present
+ * Copyright (c) 2019 Twin Science & Robotics to present
  * All rights reserved.
  */
 object ScreenUtils {
