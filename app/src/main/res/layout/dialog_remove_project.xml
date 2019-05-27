@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="12dp"
+    android:orientation="vertical"
+    app:cardBackgroundColor="@color/white"
+    app:cardCornerRadius="8dp">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingStart="40dp"
+        android:paddingTop="35dp"
+        android:paddingEnd="40dp">
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guideline6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintGuide_percent="0.5" />
+
+
+        <TextView
+            android:id="@+id/dialog_with_button_tv_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="28dp"
+            android:layout_marginEnd="10dp"
+            android:drawableTop="@drawable/big_trash"
+            android:drawablePadding="13dp"
+            android:fontFamily="@font/msr_300"
+            android:gravity="center_horizontal"
+            android:text="@string/title_dialog_remove"
+            android:textColor="@color/greyish_brown"
+            android:textSize="@dimen/dialog_title"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/dialog_remove_tv_no"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginStart="18dp"
+            android:layout_marginTop="26dp"
+            android:layout_marginEnd="4dp"
+            android:layout_marginBottom="25dp"
+            android:gravity="center"
+            app:cardBackgroundColor="@color/greyish_brown"
+            app:cardCornerRadius="20dp"
+            app:cardElevation="10dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@id/guideline6"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/dialog_with_button_tv_title">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/msr_700"
+                android:paddingStart="30dp"
+                android:paddingTop="12dp"
+                android:paddingEnd="30dp"
+                android:paddingBottom="12dp"
+                android:text="@string/lbl_no"
+                android:textAllCaps="false"
+                android:textColor="@color/white"
+                android:textSize="@dimen/dialog_button" />
+
+        </androidx.cardview.widget.CardView>
+
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/dialog_remove_tv_yes"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginStart="4dp"
+            android:layout_marginTop="26dp"
+            android:layout_marginEnd="18dp"
+            android:fontFamily="@font/msr_700"
+            android:gravity="center"
+            android:text="@string/lbl_yes"
+            android:textColor="@color/white"
+            android:textSize="@dimen/dialog_button"
+            app:cardBackgroundColor="@color/aquamarine"
+            app:cardCornerRadius="20dp"
+            app:cardElevation="10dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toEndOf="@id/guideline6"
+            app:layout_constraintTop_toBottomOf="@id/dialog_with_button_tv_title">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/msr_700"
+                android:paddingStart="32dp"
+                android:paddingTop="12dp"
+                android:paddingEnd="32dp"
+                android:paddingBottom="12dp"
+                android:text="@string/lbl_yes"
+                android:textAllCaps="false"
+                android:textColor="@color/white"
+                android:textSize="@dimen/dialog_button" />
+
+        </androidx.cardview.widget.CardView>
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.cardview.widget.CardView>

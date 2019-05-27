@@ -1,3 +1,14 @@
 <resources>
     <string name="app_name">Twinner Lite</string>
+    <string name="lbl_back">Back</string>
+    <string name="lbl_no">Hayır</string>
+    <string name="lbl_yes">Evet</string>
+    <string name="title_my_projects">Projelerim</string>
+    <string name="title_twin_projects">Örnekler</string>
+    <string name="lbl_new_project">NEW PROJECT</string>
+    <string name="title_dialog_remove">Project will be deleted forever, confirm?</string>
+    <string name="title_location_settings">Location needs to be enabled for Bluetooth Scanning</string>
+    <string name="lbl_settings">Settings</string>
+    <string name="lbl_cancel">Cancel</string>
+    <string name="title_bluetooth_settings">Bluetooth is not turned on</string>
 </resources>

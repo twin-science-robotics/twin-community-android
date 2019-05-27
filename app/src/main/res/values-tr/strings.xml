@@ -1,3 +1,14 @@
 <resources>
     <string name="app_name">Twinner Lite</string>
+    <string name="lbl_back">Geri</string>
+    <string name="lbl_no">Hayır</string>
+    <string name="lbl_yes">Evet</string>
+    <string name="title_my_projects">Projelerim</string>
+    <string name="title_twin_projects">Örnekler</string>
+    <string name="lbl_new_project">YENİ PROJE</string>
+    <string name="title_dialog_remove">Projeyi silmek istediğinden\nemin misin?</string>
+    <string name="title_location_settings">Devam etmek için cihazının konum hizmetini kullanan Konum Özelliği\'ni açman gerekiyor</string>
+    <string name="lbl_settings">Settings</string>
+    <string name="lbl_cancel">Vazgeç</string>
+    <string name="title_bluetooth_settings">Devam etmek için cihazının Bluetooth Özelliği\'ni açman gerekiyor</string>
 </resources>

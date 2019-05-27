@@ -1,0 +1,192 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+        <import type="android.view.View" />
+
+        <import type="com.twinscience.twin.lite.android.project.def.ProjectDef" />
+
+        <variable
+            name="clickEvent"
+            type="com.twinscience.twin.lite.android.project.presentation.other.ProjectClickEvent" />
+
+        <variable
+            name="position"
+            type="Integer" />
+
+        <variable
+            name="project"
+            type="com.twinscience.twin.lite.android.data.ProjectModel" />
+
+    </data>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_margin="8dp"
+            android:onClick="@{(v) -> clickEvent.onProjectClicked(position)}"
+            android:visibility="@{safeUnbox(project.type == ProjectDef.NEW) ? View.VISIBLE: View.GONE}"
+            app:cardBackgroundColor="@color/aquamarine"
+            app:cardCornerRadius="20dp"
+            app:cardElevation="5dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <androidx.constraintlayout.widget.Guideline
+                    android:id="@+id/guideline13"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    app:layout_constraintGuide_percent="0.55" />
+
+                <ImageView
+                    android:id="@+id/imageView"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_marginBottom="8dp"
+                    android:contentDescription="@null"
+                    android:src="@drawable/ellipse_white"
+                    app:layout_constraintBottom_toTopOf="@id/guideline13"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintVertical_bias="1.0" />
+
+
+                <ImageView
+                    android:id="@+id/imageView2"
+                    android:layout_width="31dp"
+                    android:layout_height="31dp"
+                    android:layout_gravity="center"
+                    android:layout_marginBottom="17.5dp"
+                    android:contentDescription="@null"
+                    android:src="@drawable/ic_plus_logo"
+                    app:layout_constraintBottom_toTopOf="@id/guideline13"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintVertical_bias="1.0" />
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="12dp"
+                    android:fontFamily="@font/msr_900"
+                    android:gravity="center_horizontal"
+                    android:text="@string/lbl_new_project"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/project_name"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="@+id/imageView"
+                    app:layout_constraintStart_toStartOf="@+id/imageView"
+                    app:layout_constraintTop_toBottomOf="@id/guideline13"
+                    app:layout_constraintVertical_bias="0.0"
+                    app:layout_goneMarginTop="8dp" />
+
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="8dp"
+            android:onClick="@{(v) -> clickEvent.onProjectClicked(position)}"
+            android:visibility="@{safeUnbox(project.type != ProjectDef.NEW) ? View.VISIBLE: View.INVISIBLE}"
+            app:cardCornerRadius="20dp"
+            app:cardElevation="5dp"
+            app:cardPreventCornerOverlap="false"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <ImageButton
+                    android:id="@+id/project_item_img"
+                    android:layout_width="@dimen/min_item_width"
+                    android:layout_height="@dimen/min_item_width"
+                    android:background="@color/white"
+                    android:contentDescription="@null"
+                    android:onClick="@{(v) -> clickEvent.onProjectClicked(position)}"
+                    android:scaleType="centerInside"
+                    android:padding="55dp"
+                    android:src="@drawable/twin_main_exp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <View
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"
+                    android:background="@color/white"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/project_item_img" />
+
+                <TextView
+                    android:id="@+id/project_item_tv_name"
+                    android:layout_width="0dp"
+                    android:layout_height="48dp"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginEnd="8dp"
+                    android:ellipsize="end"
+                    android:fontFamily="@font/msr_900"
+                    android:gravity="center_vertical|start"
+                    android:maxLines="1"
+                    android:text="@{project.title}"
+                    android:textColor="@color/greyish_brown"
+                    android:textSize="@dimen/project_name"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toStartOf="@+id/project_item_tv_trash"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/project_item_img"
+                    tools:text="Otonom Araba" />
+
+
+                <ImageButton
+                    android:id="@+id/project_item_tv_trash"
+                    android:layout_width="48dp"
+                    android:layout_height="48dp"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginTop="2dp"
+                    android:layout_marginEnd="15dp"
+                    android:layout_marginBottom="2dp"
+                    android:background="@drawable/circle_shadow_white"
+                    android:contentDescription="@null"
+                    android:onClick="@{(v) -> clickEvent.onRemoveProjectClicked(position)}"
+                    android:scaleType="centerInside"
+                    android:src="@drawable/small_trash"
+                    android:visibility="@{safeUnbox(project.type == ProjectDef.PERSONAL) ? View.VISIBLE: View.GONE}"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/project_item_img" />
+
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+        </androidx.cardview.widget.CardView>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+</layout>
