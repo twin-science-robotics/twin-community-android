@@ -1,33 +1,75 @@
 package com.twinscience.twin.lite.android.project
 
-import androidx.lifecycle.ViewModelProviders
+import android.content.Context
 import android.os.Bundle
-import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import androidx.lifecycle.Observer
+import androidx.lifecycle.ViewModelProviders
+import com.google.android.material.tabs.TabLayout
+import com.twinscience.twin.lite.android.main.MainActivity
+import com.twinscience.twin.lite.android.TwinLiteApplication
+import com.twinscience.twin.lite.android.base.BaseFragment
+import com.twinscience.twin.lite.android.databinding.FragmentHomeBinding
+import com.twinscience.twin.lite.android.project.presentation.adapter.HomePagerAdapter
+import com.twinscience.twin.lite.android.viewmodel.ViewModelFactory
+import javax.inject.Inject
 
-import com.twinscience.twin.lite.android.R
+class HomeFragment : BaseFragment() {
 
-class HomeFragment : Fragment() {
+    @Inject
+    lateinit var factory: ViewModelFactory
 
-    companion object {
-        fun newInstance() = HomeFragment()
+    private lateinit var mainActivity: MainActivity
+    private lateinit var binding: FragmentHomeBinding
+
+
+    private val viewModel: HomeViewModel by lazy {
+        ViewModelProviders.of(this, factory).get(HomeViewModel::class.java)
     }
 
-    private lateinit var viewModel: HomeViewModel
 
-    override fun onCreateView(
-        inflater: LayoutInflater, container: ViewGroup?,
-        savedInstanceState: Bundle?
-    ): View? {
-        return inflater.inflate(R.layout.fragment_home, container, false)
+    override fun onAttach(context: Context) {
+        super.onAttach(context)
+        mainActivity = context as MainActivity
+        TwinLiteApplication.getAppComponent(mainActivity)?.inject(this)
+    }
+
+    override fun onCreateView(inflater: LayoutInflater, container: ViewGroup?, savedInstanceState: Bundle?): View? {
+        binding = FragmentHomeBinding.inflate(inflater, container, false)
+        binding.fragment = this
+        binding.lifecycleOwner = this
+        return binding.root
     }
 
     override fun onActivityCreated(savedInstanceState: Bundle?) {
         super.onActivityCreated(savedInstanceState)
-        viewModel = ViewModelProviders.of(this).get(HomeViewModel::class.java)
-        // TODO: Use the ViewModel
+        super.onActivityCreated(savedInstanceState)
+        binding.viewModel = viewModel
+        viewModel.fetchTabTitles(mainActivity)
+        observeViewModel()
+    }
+
+    override fun observeViewModel() {
+        viewModel.titles.observe(this, Observer<List<String>?> { it ->
+            it?.let {
+                binding.projectsViewpager.adapter =
+                    HomePagerAdapter(mainActivity.supportFragmentManager, it, mainActivity)
+                binding.projectsTabLayout.setupWithViewPager(binding.projectsViewpager)
+                binding.projectsViewpager.addOnPageChangeListener(TabLayout.TabLayoutOnPageChangeListener(binding.projectsTabLayout))
+            }
+        })
+    }
+
+    fun onBackClicked(view: View) {
+        mainActivity.onBackPressed()
+    }
+
+
+    companion object {
+        fun newInstance() = HomeFragment()
+        val TAG: String = this::class.java.simpleName
     }
 
 }
