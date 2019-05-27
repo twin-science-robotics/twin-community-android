@@ -93,6 +93,8 @@ dependencies {
     implementation deps.dagger.android_support
     kapt deps.dagger.compiler
     kapt deps.dagger.android_support_compiler
+    //Retrofit
+    implementation deps.retrofit.moshi
     //Blockly
 /*    implementation project(':blocklylib-core')
     implementation project(':blocklylib-vertical')*/
