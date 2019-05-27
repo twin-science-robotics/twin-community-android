@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<xml xmlns="http://www.w3.org/1999/xhtml">
+	<block id="313C8D80-0D58-43F8-AE18-FE76187D2534" type="start_play" x="47" y="16">
+		<next>
+			<block id="5B28730B-8D3E-4A62-8EEE-B0ABF62794B2" type="controls_repeat_ext">
+				<value name="TIMES">
+					<shadow id="120256A2-55A4-4DDE-89B2-47E09AD511BD" type="math_number">
+						<field name="NUM">3</field>
+					</shadow>
+				</value>
+				<statement name="DO">
+					<block id="1CD3E1E7-4A45-4C95-9501-939F97C6D8BA" type="lightSoundTripleRGBLed">
+						<field name="7_1_rgb">#ff0000</field>
+						<field name="7_2_rgb">#ff0000</field>
+						<field name="7_3_rgb">#ff0000</field>
+						<next>
+							<block id="BAD7A8EB-F3D1-4B69-9714-B7A91C6FA36B" type="lightSoundBuzzerNote">
+								<field name="output">6</field>
+								<field name="note">1</field>
+								<next>
+									<block id="E6DBB0E3-C97E-41AB-A062-66C37ED87158" type="lightSoundTripleRGBLed">
+										<field name="7_1_rgb">#3333ff</field>
+										<field name="7_2_rgb">#3333ff</field>
+										<field name="7_3_rgb">#3333ff</field>
+										<next>
+											<block id="0A136BB2-6D6B-44B0-AC87-CADBC02ACF2D" type="lightSoundBuzzerNote">
+												<field name="output">6</field>
+												<field name="note">6</field>
+											</block>
+										</next>
+									</block>
+								</next>
+							</block>
+						</next>
+					</block>
+				</statement>
+			</block>
+		</next>
+	</block>
+</xml>

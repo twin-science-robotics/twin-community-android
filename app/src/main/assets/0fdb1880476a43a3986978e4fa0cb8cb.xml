@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<xml xmlns="http://www.w3.org/1999/xhtml">
+	<block id="58700E83-3386-4E22-8B8A-DB0A9DC77A7C" type="start_play" x="92" y="12">
+		<next>
+			<block id="AEB46E29-D674-406D-B658-BFA98260888E" type="controls_if">
+				<mutation else="1" elseif="0" />
+				<value name="IF0">
+					<block id="94C584F8-9BCE-4552-8CAA-E58C96B3A41B" type="logic_compare">
+						<value name="A">
+							<block id="F6A22AB6-7A70-49B7-A228-56894ECCA783" type="detectUltrasonic" />
+						</value>
+						<value name="B">
+							<block id="071694BE-059F-4790-BE77-EC3748A5C18B" type="math_number">
+								<field name="NUM">50</field>
+							</block>
+						</value>
+						<field name="OP">LTE</field>
+					</block>
+				</value>
+				<statement name="DO0">
+					<block id="F9BD1A39-03FA-4993-8738-C8E10069EFF8" type="lightSoundTripleRGBLed">
+						<field name="7_1_rgb">#33ff33</field>
+						<field name="7_2_rgb">#00ff00</field>
+						<field name="7_3_rgb">#33ff33</field>
+					</block>
+				</statement>
+				<statement name="ELSE">
+					<block id="3C349BEF-DC4A-450E-9A89-FDDB766D533E" type="lightSoundTripleRGBLed">
+						<field name="7_1_rgb">#ff0000</field>
+						<field name="7_2_rgb">#ff0000</field>
+						<field name="7_3_rgb">#ff0000</field>
+					</block>
+				</statement>
+			</block>
+		</next>
+	</block>
+</xml>

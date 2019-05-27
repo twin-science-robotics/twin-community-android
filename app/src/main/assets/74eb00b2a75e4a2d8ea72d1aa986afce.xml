@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<xml xmlns="http://www.w3.org/1999/xhtml">
+	<block id="BA8436C0-0B9A-452C-A5EF-3244E1AA09A8" type="start_play" x="32" y="-2">
+		<next>
+			<block id="D5C9014E-20D6-4550-9687-C51F45023CF3" type="controls_whileUntil">
+				<value name="BOOL">
+					<block id="28CB782B-2284-487E-BE6E-B41C60CF9086" type="logic_boolean">
+						<field name="BOOL">TRUE</field>
+					</block>
+				</value>
+				<field name="MODE">WHILE</field>
+				<statement name="DO">
+					<block id="72E49A81-F2BB-4325-8314-BA2F41011AD5" type="lightSoundTripleRGBLed">
+						<field name="7_1_rgb">#ff6600</field>
+						<field name="7_2_rgb">#ff6600</field>
+						<field name="7_3_rgb">#ff6600</field>
+						<next>
+							<block id="D6F937AB-7B31-4276-8661-A8F4DD691F7C" type="sleep">
+								<field name="duration">1.0</field>
+								<next>
+									<block id="910E3152-D3CB-4BF1-9BFF-DBDAAD9172DC" type="lightSoundTripleRGBLed">
+										<field name="7_1_rgb">#cc33cc</field>
+										<field name="7_2_rgb">#cc33cc</field>
+										<field name="7_3_rgb">#cc33cc</field>
+										<next>
+											<block id="D2B32DA5-7DE8-4C12-BA8D-048C60D33004" type="sleep">
+												<field name="duration">1.0</field>
+												<next>
+													<block id="62C0AE3A-190F-48FF-B179-A278DA19955C" type="lightSoundTripleRGBLed">
+														<field name="7_1_rgb">#33ff33</field>
+														<field name="7_2_rgb">#33ff33</field>
+														<field name="7_3_rgb">#33ff33</field>
+														<next>
+															<block id="16774DA7-FAD4-46B2-BA23-EB8422B75592" type="sleep">
+																<field name="duration">1.0</field>
+															</block>
+														</next>
+													</block>
+												</next>
+											</block>
+										</next>
+									</block>
+								</next>
+							</block>
+						</next>
+					</block>
+				</statement>
+			</block>
+		</next>
+	</block>
+</xml>

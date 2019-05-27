@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<xml xmlns="http://www.w3.org/1999/xhtml">
+	<block id="08CF8777-A0B1-4DF0-868F-87640F5C47D6" type="start_play" x="38" y="2">
+		<next>
+			<block id="6DA4D476-A06E-4ACC-B86B-F424B8B6A8FD" type="controls_whileUntil">
+				<value name="BOOL">
+					<block id="AF6A30B4-A065-4AC8-8051-D899A0B3D193" type="logic_boolean">
+						<field name="BOOL">TRUE</field>
+					</block>
+				</value>
+				<field name="MODE">WHILE</field>
+				<statement name="DO">
+					<block id="794F062C-8F25-442A-9CE0-9A197EF1FA0E" type="controls_if">
+						<mutation else="0" elseif="3" />
+						<value name="IF0">
+							<block id="3BD2A46A-557F-4C9A-AD5F-2C6CFB420090" type="detectTouch">
+								<field name="input">8</field>
+							</block>
+						</value>
+						<statement name="DO0">
+							<block id="7C8E4B04-C724-45BB-ACDF-9CE34CDE957D" type="lightSoundTripleRGBLed">
+								<field name="7_1_rgb">#ff0000</field>
+								<field name="7_2_rgb">#ff0000</field>
+								<field name="7_3_rgb">#ff0000</field>
+							</block>
+						</statement>
+						<value name="IF1">
+							<block id="4F56ECB1-1610-4BA8-9EC5-74FEECF48E3C" type="detectTouch">
+								<field name="input">9</field>
+							</block>
+						</value>
+						<statement name="DO1">
+							<block id="A6C1B013-CB1F-4F63-A97A-A49CEF31B1C4" type="lightSoundTripleRGBLed">
+								<field name="7_1_rgb">#33ff33</field>
+								<field name="7_2_rgb">#33ff33</field>
+								<field name="7_3_rgb">#33ff33</field>
+							</block>
+						</statement>
+						<value name="IF2">
+							<block id="85F49C67-C2EF-42BB-993E-F894B226BFAF" type="detectTouch">
+								<field name="input">10</field>
+							</block>
+						</value>
+						<statement name="DO2">
+							<block id="DC1B0C5C-41C3-4160-BF2E-1B9B1F9BD4BC" type="lightSoundTripleRGBLed">
+								<field name="7_1_rgb">#ffff00</field>
+								<field name="7_2_rgb">#ffff00</field>
+								<field name="7_3_rgb">#ffff00</field>
+							</block>
+						</statement>
+						<value name="IF3">
+							<block id="ED966A57-DE53-4BE2-ADBC-93AFC5578444" type="detectTouch">
+								<field name="input">12</field>
+							</block>
+						</value>
+						<statement name="DO3">
+							<block id="49DE1A03-91DE-49E7-B29D-C9C0BCA7C73B" type="lightSoundTripleRGBLed">
+								<field name="7_1_rgb">#000099</field>
+								<field name="7_2_rgb">#000099</field>
+								<field name="7_3_rgb">#000099</field>
+							</block>
+						</statement>
+					</block>
+				</statement>
+			</block>
+		</next>
+	</block>
+</xml>

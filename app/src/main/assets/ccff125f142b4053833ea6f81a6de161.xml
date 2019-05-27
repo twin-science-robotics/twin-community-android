@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<xml xmlns="http://www.w3.org/1999/xhtml">
+	<block id="9675EEAC-643B-4863-A804-CCA66C43824B" type="start_play" x="3" y="-42">
+		<next>
+			<block id="22069F77-21B8-4DA7-8D80-30B3CB352636" type="controls_whileUntil">
+				<value name="BOOL">
+					<block id="2923EE71-9DA5-4893-8D91-9153C29FF7A4" type="logic_boolean">
+						<field name="BOOL">TRUE</field>
+					</block>
+				</value>
+				<field name="MODE">WHILE</field>
+				<statement name="DO">
+					<block id="11AE22B8-64EE-44DE-89DD-7C337386B92A" type="controls_if">
+						<mutation else="0" elseif="2" />
+						<value name="IF0">
+							<block id="24FE77AC-9362-4DBE-92A1-789D101D7921" type="conditionDeviceOrientation">
+								<field name="orientation">right</field>
+							</block>
+						</value>
+						<statement name="DO0">
+							<block id="0B8171C0-398A-4CFE-9752-C822F10FC455" type="lightSoundTripleRGBLed">
+								<field name="7_1_rgb">#ffffff</field>
+								<field name="7_2_rgb">#ffffff</field>
+								<field name="7_3_rgb">#33ff33</field>
+							</block>
+						</statement>
+						<value name="IF1">
+							<block id="E839E021-180A-4774-88FF-09D57CB639F3" type="conditionDeviceOrientation">
+								<field name="orientation">left</field>
+							</block>
+						</value>
+						<statement name="DO1">
+							<block id="9A72CDC8-C0E4-4EF5-9A55-518820DCB664" type="lightSoundTripleRGBLed">
+								<field name="7_1_rgb">#33ff33</field>
+								<field name="7_2_rgb">#ffffff</field>
+								<field name="7_3_rgb">#ffffff</field>
+							</block>
+						</statement>
+						<value name="IF2">
+							<block id="DF4D0908-E835-44F1-9268-FA910DBF73E6" type="conditionDeviceOrientation">
+								<field name="orientation">up</field>
+							</block>
+						</value>
+						<statement name="DO2">
+							<block id="6E3C2401-DD36-4BD6-B145-073BF8A45BAC" type="lightSoundTripleRGBLed">
+								<field name="7_1_rgb">#ffffff</field>
+								<field name="7_2_rgb">#00ff00</field>
+								<field name="7_3_rgb">#ffffff</field>
+							</block>
+						</statement>
+					</block>
+				</statement>
+			</block>
+		</next>
+	</block>
+</xml>

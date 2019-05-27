@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<xml xmlns="http://www.w3.org/1999/xhtml">
+	<block id="2C69F070-3228-402F-9FFE-02785F9CE571" type="start_play" x="82" y="-1">
+		<next>
+			<block id="D4AFDA31-3499-4FA6-830F-9B6E6AF2268E" type="lightSoundTripleRGBLed">
+				<field name="7_1_rgb">#000000</field>
+				<field name="7_2_rgb">#000000</field>
+				<field name="7_3_rgb">#000000</field>
+				<next>
+					<block id="86E4F7E8-ED09-44DF-94BD-0AFE01209FBE" type="actionServoMotor">
+						<field name="output">6</field>
+						<field name="angle">0</field>
+						<next>
+							<block id="9B6EF662-A52F-4421-8A0C-40204F355131" type="controls_whileUntil">
+								<value name="BOOL">
+									<block id="166D486B-89EA-4F91-B8D6-7936A615686B" type="logic_boolean">
+										<field name="BOOL">TRUE</field>
+									</block>
+								</value>
+								<field name="MODE">WHILE</field>
+								<statement name="DO">
+									<block id="CF71DB52-3901-4850-ABFA-82EABBB076A5" type="controls_if">
+										<mutation else="0" elseif="0" />
+										<value name="IF0">
+											<block id="CB6F35F3-F7DE-45D0-86F2-515FC2995D75" type="logic_compare">
+												<value name="A">
+													<block id="464D6B9F-E722-4644-9748-CD403389570B" type="detectUltrasonic" />
+												</value>
+												<value name="B">
+													<block id="AF5BC21C-B5C7-4157-B8DA-DDD8ADB6BB36" type="math_number">
+														<field name="NUM">10</field>
+													</block>
+												</value>
+												<field name="OP">LTE</field>
+											</block>
+										</value>
+										<statement name="DO0">
+											<block id="516CBAF0-D211-4326-999F-385ADC057BFD" type="lightSoundTripleRGBLed">
+												<field name="7_1_rgb">#33ff33</field>
+												<field name="7_2_rgb">#00ff00</field>
+												<field name="7_3_rgb">#33ff33</field>
+												<next>
+													<block id="4197C0AF-5A8A-4C87-B472-FD4799FF126C" type="actionServoMotor">
+														<field name="output">6</field>
+														<field name="angle">90</field>
+														<next>
+															<block id="8750768E-E23F-487A-B01C-D4500222265F" type="lightSoundBuzzerNote">
+																<field name="output">9</field>
+																<field name="note">5</field>
+																<next>
+																	<block id="B6697E2E-2975-4F74-AC48-15FABAD7D567" type="sleep">
+																		<field name="duration">5.0</field>
+																		<next>
+																			<block id="E6C5CC22-45B2-4ABB-8FA0-426C1C5A779B" type="lightSoundTripleRGBLed">
+																				<field name="7_1_rgb">#000000</field>
+																				<field name="7_2_rgb">#000000</field>
+																				<field name="7_3_rgb">#000000</field>
+																				<next>
+																					<block id="6804B0EF-B2F2-4759-B938-1D5BE16571AA" type="actionServoMotor">
+																						<field name="output">6</field>
+																						<field name="angle">0</field>
+																					</block>
+																				</next>
+																			</block>
+																		</next>
+																	</block>
+																</next>
+															</block>
+														</next>
+													</block>
+												</next>
+											</block>
+										</statement>
+									</block>
+								</statement>
+							</block>
+						</next>
+					</block>
+				</next>
+			</block>
+		</next>
+	</block>
+</xml>

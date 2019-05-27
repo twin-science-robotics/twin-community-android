@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<xml xmlns="http://www.w3.org/1999/xhtml">
+	<block id="F43DDF43-999D-430F-A80F-71CA4BFBD0B0" type="start_play" x="9" y="-39">
+		<next>
+			<block id="693F24CC-0222-409B-8021-F93143F6B51D" type="actionDCMotor">
+				<field name="output">6</field>
+				<field name="velocity">60</field>
+				<next>
+					<block id="2817BD13-A6BA-4B6D-B4AD-B213041E1B51" type="controls_whileUntil">
+						<value name="BOOL">
+							<block id="DF3B76F9-751C-4714-8E91-58E743E60FDA" type="logic_boolean">
+								<field name="BOOL">TRUE</field>
+							</block>
+						</value>
+						<field name="MODE">WHILE</field>
+						<statement name="DO">
+							<block id="B5ABFA6A-2808-4000-ABD6-D199500487CF" type="lightSoundTripleRGBLed">
+								<field name="7_1_rgb">#ffffff</field>
+								<field name="7_2_rgb">#ffffff</field>
+								<field name="7_3_rgb">#ffffff</field>
+								<next>
+									<block id="79D98006-1BA1-447E-A460-60442375E113" type="lightSoundTripleRGBLed">
+										<field name="7_1_rgb">#ff0000</field>
+										<field name="7_2_rgb">#ff0000</field>
+										<field name="7_3_rgb">#ff0000</field>
+										<next>
+											<block id="ACCE6AF2-D33F-4822-9E7E-E1E2EC1EEBF0" type="sleep">
+												<field name="duration">1.0</field>
+											</block>
+										</next>
+									</block>
+								</next>
+							</block>
+						</statement>
+					</block>
+				</next>
+			</block>
+		</next>
+	</block>
+</xml>

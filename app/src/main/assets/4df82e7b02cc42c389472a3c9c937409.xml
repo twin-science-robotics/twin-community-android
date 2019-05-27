@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<xml xmlns="http://www.w3.org/1999/xhtml">
+	<block id="814D77FE-9E39-4EB6-BF3D-D10221E1C180" type="controls_whileUntil" x="-32" y="-52">
+		<value name="BOOL">
+			<block id="2FE85152-0C08-4C17-A376-46BE4ED1DAAD" type="logic_boolean">
+				<field name="BOOL">TRUE</field>
+			</block>
+		</value>
+		<field name="MODE">WHILE</field>
+		<statement name="DO">
+			<block id="DE5247E7-7677-49DC-AA83-669962F6C356" type="controls_if">
+				<mutation else="0" elseif="3" />
+				<value name="IF0">
+					<block id="06BDE16E-CA39-4A9C-AC2C-471F1225BF6C" type="conditionDeviceOrientation">
+						<field name="orientation">right</field>
+					</block>
+				</value>
+				<statement name="DO0">
+					<block id="8D1008E6-AD83-49F9-ADB7-76083934C28B" type="actionDCMotor">
+						<field name="output">6</field>
+						<field name="velocity">100</field>
+						<next>
+							<block id="B1B36F5D-EE0E-4611-A442-77A0DB84ED8B" type="actionDCMotor">
+								<field name="output">10</field>
+								<field name="velocity">0</field>
+							</block>
+						</next>
+					</block>
+				</statement>
+				<value name="IF1">
+					<block id="20B968D1-04E3-41D8-BD26-09AEBE850B55" type="conditionDeviceOrientation">
+						<field name="orientation">left</field>
+					</block>
+				</value>
+				<statement name="DO1">
+					<block id="561773B3-FA4D-4DFE-A518-B6428C2131C7" type="actionDCMotor">
+						<field name="output">6</field>
+						<field name="velocity">0</field>
+						<next>
+							<block id="08AA14CE-3539-4041-96C1-2C21A1F493FC" type="actionDCMotor">
+								<field name="output">10</field>
+								<field name="velocity">100</field>
+							</block>
+						</next>
+					</block>
+				</statement>
+				<value name="IF2">
+					<block id="071E144F-1366-48FF-BBF9-C33528722ECA" type="conditionDeviceOrientation">
+						<field name="orientation">up</field>
+					</block>
+				</value>
+				<statement name="DO2">
+					<block id="52AD5913-32FA-48D1-BC89-7B3F22B99565" type="actionDCMotor">
+						<field name="output">6</field>
+						<field name="velocity">100</field>
+						<next>
+							<block id="8AAF5EEB-7217-45EB-9FC4-BCB6DD1041CB" type="actionDCMotor">
+								<field name="output">10</field>
+								<field name="velocity">100</field>
+							</block>
+						</next>
+					</block>
+				</statement>
+				<value name="IF3">
+					<block id="07913235-DECE-48D5-B1DB-6D3A56A4B478" type="conditionDeviceOrientation">
+						<field name="orientation">right</field>
+					</block>
+				</value>
+				<statement name="DO3">
+					<block id="FBE981A1-A6C0-42A2-82F4-E0DF1D109D75" type="actionDCMotor">
+						<field name="output">6</field>
+						<field name="velocity">0</field>
+						<next>
+							<block id="19E486AD-EBE4-4D88-BCA3-372E51505EE6" type="actionDCMotor">
+								<field name="output">10</field>
+								<field name="velocity">0</field>
+							</block>
+						</next>
+					</block>
+				</statement>
+			</block>
+		</statement>
+	</block>
+</xml>

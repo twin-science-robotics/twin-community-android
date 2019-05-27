@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<xml xmlns="http://www.w3.org/1999/xhtml">
+	<block id="190C34A1-F50F-4109-A93B-F483867A6A50" type="start_play" x="132" y="12">
+		<next>
+			<block id="2AEE6A32-B1EB-4539-81E9-0D00641E868F" type="controls_whileUntil">
+				<value name="BOOL">
+					<block id="A5BB2D94-3E38-4D4A-80C9-9C7CAAE03E17" type="logic_boolean">
+						<field name="BOOL">TRUE</field>
+					</block>
+				</value>
+				<field name="MODE">WHILE</field>
+				<statement name="DO">
+					<block id="18FA755C-00D2-4832-AE5C-04B4CBC12BC8" type="controls_if">
+						<mutation else="1" elseif="0" />
+						<value name="IF0">
+							<block id="1DAB5732-7528-4D8C-B44C-F435290FFBB5" type="logic_compare">
+								<value name="A">
+									<block id="05717D75-E06F-4054-8FCE-0F1BC32BBA10" type="detectUltrasonic" />
+								</value>
+								<value name="B">
+									<block id="20F940C5-61D8-42B8-99CA-90346B3DFA72" type="math_number">
+										<field name="NUM">20</field>
+									</block>
+								</value>
+								<field name="OP">LTE</field>
+							</block>
+						</value>
+						<statement name="DO0">
+							<block id="2D0827F1-CBC0-491C-9A5A-EC4DAB6B2ACD" type="lightSoundTripleRGBLed">
+								<field name="7_1_rgb">#ff0000</field>
+								<field name="7_2_rgb">#ff0000</field>
+								<field name="7_3_rgb">#ff0000</field>
+							</block>
+						</statement>
+						<statement name="ELSE">
+							<block id="1328D107-91AB-4CE8-ACFC-A0B3D585EE9C" type="lightSoundTripleRGBLed">
+								<field name="7_1_rgb">#000000</field>
+								<field name="7_2_rgb">#000000</field>
+								<field name="7_3_rgb">#000000</field>
+							</block>
+						</statement>
+					</block>
+				</statement>
+			</block>
+		</next>
+	</block>
+</xml>

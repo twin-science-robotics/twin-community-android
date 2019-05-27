@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<xml xmlns="http://www.w3.org/1999/xhtml">
+	<block id="FC9375D2-3140-4F26-B293-C7D6EF4124CA" type="start_play" x="28" y="-23">
+		<next>
+			<block id="AE6756D0-22B6-45C4-8A6E-252FE977109F" type="controls_whileUntil">
+				<value name="BOOL">
+					<block id="78A81A47-4BC8-424E-8061-A878494A515E" type="logic_boolean">
+						<field name="BOOL">TRUE</field>
+					</block>
+				</value>
+				<field name="MODE">WHILE</field>
+				<statement name="DO">
+					<block id="65DA0FC3-B2AB-42C2-A6C7-953E78FF2A05" type="lightSoundTripleRGBLed">
+						<field name="7_1_rgb">#ff0000</field>
+						<field name="7_2_rgb">#00ff00</field>
+						<field name="7_3_rgb">#0000ff</field>
+						<next>
+							<block id="6CEE3B34-BFD3-48BE-9DEE-3CAC6A1A6647" type="sleep">
+								<field name="duration">1.0</field>
+								<next>
+									<block id="F3CB19FA-61D4-4441-A748-5C20E81B34D6" type="lightSoundTripleRGBLed">
+										<field name="7_1_rgb">#ffff33</field>
+										<field name="7_2_rgb">#cc33cc</field>
+										<field name="7_3_rgb">#ff9966</field>
+										<next>
+											<block id="5F5F8FEB-AE1D-4278-BE0C-A21AFD95BE51" type="sleep">
+												<field name="duration">1.0</field>
+												<next>
+													<block id="05CE851F-4584-465C-A73E-5A69B57B42F3" type="lightSoundTripleRGBLed">
+														<field name="7_1_rgb">#3333ff</field>
+														<field name="7_2_rgb">#33ffff</field>
+														<field name="7_3_rgb">#663300</field>
+														<next>
+															<block id="DC7F4E24-5B84-47B0-B3E6-317CAA566C65" type="sleep">
+																<field name="duration">1.0</field>
+																<next>
+																	<block id="33D8A4FB-10AC-4D2F-9179-B4758A3FBE1D" type="lightSoundTripleRGBLed">
+																		<field name="7_1_rgb">#cc66cc</field>
+																		<field name="7_2_rgb">#ffff33</field>
+																		<field name="7_3_rgb">#ff6600</field>
+																	</block>
+																</next>
+															</block>
+														</next>
+													</block>
+												</next>
+											</block>
+										</next>
+									</block>
+								</next>
+							</block>
+						</next>
+					</block>
+				</statement>
+			</block>
+		</next>
+	</block>
+</xml>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<xml xmlns="http://www.w3.org/1999/xhtml">
+	<block id="BD811484-AF42-4690-8443-68A9A31A37D5" type="start_play" x="59" y="9">
+		<next>
+			<block id="78AA415C-5A1D-4F9A-8FCB-70F335C2D1B3" type="lightSoundTripleRGBLed">
+				<field name="7_1_rgb">#ffffff</field>
+				<field name="7_2_rgb">#ffffff</field>
+				<field name="7_3_rgb">#ffffff</field>
+			</block>
+		</next>
+	</block>
+</xml>

@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<xml xmlns="http://www.w3.org/1999/xhtml">
+	<block id="CBC4C798-80A5-49C8-8F1A-6059A7AE2F70" type="start_play" x="10" y="-24">
+		<next>
+			<block id="72F57275-9EB3-4661-B3FB-8B4F030407D6" type="controls_whileUntil">
+				<value name="BOOL">
+					<block id="A1E2FCC2-D26A-4762-8B29-294CDCFEF205" type="logic_boolean">
+						<field name="BOOL">TRUE</field>
+					</block>
+				</value>
+				<field name="MODE">WHILE</field>
+				<statement name="DO">
+					<block id="26BDEA2E-0500-4FE3-AC05-852E8A0D1C53" type="actionServoMotor">
+						<field name="output">6</field>
+						<field name="angle">0</field>
+						<next>
+							<block id="96898BDA-3B5C-45CD-BDB9-6D8EF8FA4E3B" type="actionServoMotor">
+								<field name="output">6</field>
+								<field name="angle">359</field>
+							</block>
+						</next>
+					</block>
+				</statement>
+			</block>
+		</next>
+	</block>
+</xml>

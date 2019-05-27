@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<xml xmlns="http://www.w3.org/1999/xhtml">
+	<block id="E2091865-CB32-4BD3-A7D1-15E29EB3BDD7" type="start_play" x="36" y="-9">
+		<next>
+			<block id="D3545B46-898C-4FBB-9466-ACCE33F1F527" type="controls_whileUntil">
+				<value name="BOOL">
+					<block id="465CCABD-28BF-4834-8B30-229AB3D86C45" type="logic_boolean">
+						<field name="BOOL">TRUE</field>
+					</block>
+				</value>
+				<field name="MODE">WHILE</field>
+				<statement name="DO">
+					<block id="12E54435-4343-42E1-8614-CB0C1C009829" type="controls_if">
+						<mutation else="1" elseif="1" />
+						<value name="IF0">
+							<block id="7279BF6B-D734-4F9C-8CDE-82051C2DDA60" type="logic_compare">
+								<value name="A">
+									<block id="432C9E95-380D-40A9-9A6C-A01BD742665C" type="detectUltrasonic" />
+								</value>
+								<value name="B">
+									<block id="9EAAD728-B6EA-4D9E-A439-259B437E1371" type="math_number">
+										<field name="NUM">10</field>
+									</block>
+								</value>
+								<field name="OP">LTE</field>
+							</block>
+						</value>
+						<statement name="DO0">
+							<block id="2F945753-E75A-46B9-8931-20B1FF0B107E" type="lightSoundTripleRGBLed">
+								<field name="7_1_rgb">#cc0000</field>
+								<field name="7_2_rgb">#cc0000</field>
+								<field name="7_3_rgb">#cc0000</field>
+							</block>
+						</statement>
+						<value name="IF1">
+							<block id="0FC4C345-2508-46BB-BF19-4DC697099422" type="logic_compare">
+								<value name="A">
+									<block id="8124116F-74CB-47CF-B4C2-5A7DF00A54B2" type="detectUltrasonic" />
+								</value>
+								<value name="B">
+									<block id="E41E40FE-7598-4C19-B877-EDAAE5F299C8" type="math_number">
+										<field name="NUM">25</field>
+									</block>
+								</value>
+								<field name="OP">LTE</field>
+							</block>
+						</value>
+						<statement name="DO1">
+							<block id="98AEA3C4-CB9D-4EE9-B1E5-1586C827EE3C" type="lightSoundTripleRGBLed">
+								<field name="7_1_rgb">#ffcc00</field>
+								<field name="7_2_rgb">#ffcc00</field>
+								<field name="7_3_rgb">#ffcc00</field>
+							</block>
+						</statement>
+						<statement name="ELSE">
+							<block id="CB5DB5F2-59A7-460F-9ED1-E9D293A43FCB" type="lightSoundTripleRGBLed">
+								<field name="7_1_rgb">#009900</field>
+								<field name="7_2_rgb">#009900</field>
+								<field name="7_3_rgb">#009900</field>
+							</block>
+						</statement>
+					</block>
+				</statement>
+			</block>
+		</next>
+	</block>
+</xml>

@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<xml xmlns="http://www.w3.org/1999/xhtml">
+	<block id="76E00B92-83C9-43A1-817D-692E4B889983" type="actionDCMotor" x="69" y="71">
+		<field name="output">6</field>
+		<field name="velocity">100</field>
+		<next>
+			<block id="69AFF35E-CE59-4BC9-9C4D-A7379287428E" type="controls_whileUntil">
+				<value name="BOOL">
+					<block id="F99B5D0E-63B4-45DF-AF38-D5D53EB290F9" type="logic_boolean">
+						<field name="BOOL">TRUE</field>
+					</block>
+				</value>
+				<field name="MODE">WHILE</field>
+				<statement name="DO">
+					<block id="36EBD9BE-EA24-425B-804A-41637382FAF4" type="lightSoundTripleRGBLed">
+						<field name="7_1_rgb">#ff6666</field>
+						<field name="7_2_rgb">#ff6666</field>
+						<field name="7_3_rgb">#ff6666</field>
+						<next>
+							<block id="0A077927-AF48-4BA5-8552-BB828102AC7D" type="sleep">
+								<field name="duration">1.0</field>
+								<next>
+									<block id="D3A7D375-BAD1-47AC-9A7D-4B25FE418DCB" type="lightSoundTripleRGBLed">
+										<field name="7_1_rgb">#ffcc00</field>
+										<field name="7_2_rgb">#ffcc00</field>
+										<field name="7_3_rgb">#ffcc00</field>
+										<next>
+											<block id="9F29CF12-6557-4851-8F73-25F4D7EC995B" type="sleep">
+												<field name="duration">1.0</field>
+												<next>
+													<block id="CE0C537E-A974-4F78-B316-D532E8281128" type="lightSoundTripleRGBLed">
+														<field name="7_1_rgb">#33ccff</field>
+														<field name="7_2_rgb">#33ccff</field>
+														<field name="7_3_rgb">#33ccff</field>
+														<next>
+															<block id="B1FE61B9-5CEA-473F-81A4-65FBEAEDEAD8" type="sleep">
+																<field name="duration">1.0</field>
+																<next>
+																	<block id="D9AFCC38-EBAD-4379-95B3-9BF904A15733" type="lightSoundTripleRGBLed">
+																		<field name="7_1_rgb">#cc33cc</field>
+																		<field name="7_2_rgb">#cc33cc</field>
+																		<field name="7_3_rgb">#cc33cc</field>
+																		<next>
+																			<block id="08796B5B-DF22-4EC0-B4B1-CAEF0AC57EFE" type="sleep">
+																				<field name="duration">1.0</field>
+																			</block>
+																		</next>
+																	</block>
+																</next>
+															</block>
+														</next>
+													</block>
+												</next>
+											</block>
+										</next>
+									</block>
+								</next>
+							</block>
+						</next>
+					</block>
+				</statement>
+			</block>
+		</next>
+	</block>
+</xml>

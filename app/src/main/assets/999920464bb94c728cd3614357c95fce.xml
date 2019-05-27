@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<xml xmlns="http://www.w3.org/1999/xhtml">
+	<block id="F13C8729-E874-4EA0-9DD0-B18A527F1D07" type="start_play" x="96" y="5">
+		<next>
+			<block id="1F494D64-FE2A-49FB-AAAA-4D148EB10BAF" type="controls_whileUntil">
+				<value name="BOOL">
+					<block id="67855CDD-0A56-4FC6-AF4D-A9D4E6C54BA3" type="logic_boolean">
+						<field name="BOOL">TRUE</field>
+					</block>
+				</value>
+				<field name="MODE">WHILE</field>
+				<statement name="DO">
+					<block id="8C136EF0-2B9D-4874-9ECC-FF375FDA9842" type="controls_if">
+						<mutation else="0" elseif="3" />
+						<value name="IF0">
+							<block id="47AFEAE4-3AEF-46D7-A7DA-73BEEF68EF85" type="detectTouch">
+								<field name="input">8</field>
+							</block>
+						</value>
+						<statement name="DO0">
+							<block id="42689CF8-1962-4533-A7FB-03F0483504D5" type="lightSoundBuzzerNote">
+								<field name="output">6</field>
+								<field name="note">0</field>
+							</block>
+						</statement>
+						<value name="IF1">
+							<block id="268C3F76-3A7B-4651-A3A9-DDDD29E0CBBF" type="detectTouch">
+								<field name="input">9</field>
+							</block>
+						</value>
+						<statement name="DO1">
+							<block id="14160E11-44D6-4188-ACE4-A98327BD1E02" type="lightSoundBuzzerNote">
+								<field name="output">6</field>
+								<field name="note">1</field>
+							</block>
+						</statement>
+						<value name="IF2">
+							<block id="AA791831-1544-4CC1-8F06-A42EC46036EE" type="detectTouch">
+								<field name="input">10</field>
+							</block>
+						</value>
+						<statement name="DO2">
+							<block id="31E98E77-BF73-4874-8F32-137994F71A34" type="lightSoundBuzzerNote">
+								<field name="output">6</field>
+								<field name="note">2</field>
+							</block>
+						</statement>
+						<value name="IF3">
+							<block id="F630E3DC-33AD-4C36-B505-AAD084E1116D" type="detectTouch">
+								<field name="input">12</field>
+							</block>
+						</value>
+						<statement name="DO3">
+							<block id="0520C81F-4111-44F1-9B58-10686F6FDD29" type="lightSoundBuzzerNote">
+								<field name="output">6</field>
+								<field name="note">3</field>
+							</block>
+						</statement>
+					</block>
+				</statement>
+			</block>
+		</next>
+	</block>
+</xml>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<xml xmlns="http://www.w3.org/1999/xhtml">
+	<block id="DF41E939-EE98-4A00-97B7-B90DB573956E" type="start_play" x="21" y="18">
+		<next>
+			<block id="94CF5A90-222D-4F04-AA03-E8A97F0548D3" type="lightSoundBuzzerMusic">
+				<field name="output">6</field>
+				<field name="music">2</field>
+			</block>
+		</next>
+	</block>
+</xml>
