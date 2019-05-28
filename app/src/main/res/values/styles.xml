@@ -43,7 +43,7 @@
         <item name="android:fontFamily">@font/msr_900</item>
     </style>
 
-   <!-- <style name="StylesDemoTheme" parent="BlocklyVerticalTheme">
+    <style name="StylesDemoTheme" parent="BlocklyVerticalTheme">
         <item name="blockTextSize">13sp</item>
         <item name="colorPrimary">@color/aquamarine</item>
         <item name="colorPrimaryDark">@color/colorPrimary</item>
@@ -53,12 +53,11 @@
         <item name="android:windowFullscreen">true</item>
         <item name="android:windowContentOverlay">@null</item>
     </style>
-
-    <style name="TextInputLabel" parent="TextAppearance.AppCompat">
-        <item name="colorAccent">@color/aquamarine</item>
-        <item name="android:textSize">@dimen/text_input_size</item>
-        <item name="colorControlNormal">@color/greyish_brown_50</item>
-        <item name="colorControlActivated">@color/greyish_brown</item>
-    </style>-->
+     <style name="TextInputLabel" parent="TextAppearance.AppCompat">
+         <item name="colorAccent">@color/aquamarine</item>
+         <item name="android:textSize">@dimen/text_input_size</item>
+         <item name="colorControlNormal">@color/greyish_brown_50</item>
+         <item name="colorControlActivated">@color/greyish_brown</item>
+     </style>-->
 
 </resources>

@@ -9,8 +9,8 @@ import android.widget.TextView;
 
 import androidx.annotation.Nullable;
 import androidx.cardview.widget.CardView;
+
 import com.twinscience.twin.lite.android.R;
-import com.twinscience.twin.lite.android.blockly.presentation.other.BlocklyAlertState;
 import com.twinscience.twin.lite.android.utils.ScreenUtils;
 
 /**
@@ -21,78 +21,6 @@ import com.twinscience.twin.lite.android.utils.ScreenUtils;
 public class DialogUtils {
 
     private AlertDialog alertDialog;
-
-    public void showAlertWithButton(Activity activity, String title, String label, boolean isAutoDismiss, @Nullable BlocklyAlertState state, @Nullable OneButtonCallBack callBack) {
-
-        if (alertDialog != null && alertDialog.isShowing()) {
-            alertDialog.dismiss();
-        }
-
-        View view = activity.getLayoutInflater().inflate(R.layout.dialog_with_button, null);
-        AlertDialog.Builder alertDialogBuilder = new AlertDialog.Builder(activity, R.style.DialogTheme);
-        alertDialogBuilder.setView(view);
-        alertDialog = alertDialogBuilder.show();
-        alertDialog.setCanceledOnTouchOutside(false);
-        alertDialog.setCancelable(false);
-
-        TextView tvTitle = view.findViewById(R.id.dialog_with_button_tv_title);
-        TextView tvAction = view.findViewById(R.id.dialog_with_button_tv_action);
-        tvTitle.setText(title);
-        tvAction.setText(label);
-        CardView cardOk = view.findViewById(R.id.dialog_with_button_root_cancel);
-        cardOk.setOnClickListener(v -> {
-            alertDialog.dismiss();
-            if (state != null && callBack != null) {
-                callBack.onButtonClicked(state);
-            }
-        });
-
-        if (isAutoDismiss) {
-            Handler handler = new Handler();
-            handler.postDelayed(() -> {
-                if (alertDialog != null && alertDialog.isShowing()) {
-                    alertDialog.dismiss();
-                }
-                handler.removeCallbacksAndMessages(null);
-            }, 1000);
-
-        }
-
-    }
-
-    public void showAlertWithButton(Activity activity, String title, String label, @Nullable Drawable drawableTop, boolean isAutoDismiss) {
-
-        if (alertDialog != null && alertDialog.isShowing()) {
-            alertDialog.dismiss();
-        }
-
-        View view = activity.getLayoutInflater().inflate(R.layout.dialog_with_button, null);
-        AlertDialog.Builder alertDialogBuilder = new AlertDialog.Builder(activity, R.style.DialogTheme);
-        alertDialogBuilder.setView(view);
-        alertDialog = alertDialogBuilder.show();
-        alertDialog.setCanceledOnTouchOutside(false);
-        alertDialog.setCancelable(false);
-
-        TextView tvTitle = view.findViewById(R.id.dialog_with_button_tv_title);
-        TextView tvAction = view.findViewById(R.id.dialog_with_button_tv_action);
-        tvTitle.setCompoundDrawablesWithIntrinsicBounds(null, drawableTop, null, null);
-        tvTitle.setText(title);
-        tvAction.setText(label);
-        CardView cardOk = view.findViewById(R.id.dialog_with_button_root_cancel);
-        cardOk.setOnClickListener(v -> alertDialog.dismiss());
-
-        if (isAutoDismiss) {
-            Handler handler = new Handler();
-            handler.postDelayed(() -> {
-                if (alertDialog != null && alertDialog.isShowing()) {
-                    alertDialog.dismiss();
-                }
-                handler.removeCallbacksAndMessages(null);
-            }, 1000);
-
-        }
-
-    }
 
     public static void showAlertWithButton(Activity activity, String title, String label, Drawable drawableTop, boolean isAutoDismiss, @Nullable OneButtonCallBack callBack) {
 
@@ -135,17 +63,49 @@ public class DialogUtils {
     }
 
 
+    public static void showAlertWithTwoButtons(Activity activity, String title, String lblPositive, String lblNegative, TwoButtonsCallBack callBack) {
+        View view = activity.getLayoutInflater().inflate(R.layout.dialog_with_two_buttons, null);
+        AlertDialog.Builder alertDialogBuilder = new AlertDialog.Builder(activity, R.style.DialogTheme);
+        alertDialogBuilder.setView(view);
+        TextView tvTitle = view.findViewById(R.id.dialog_with_two_button_tv_title);
+        TextView tvActionLeft = view.findViewById(R.id.dialog_with_two_buttons_tv_left);
+        TextView tvActionRight = view.findViewById(R.id.dialog_with_two_buttons_tv_right);
+        CardView rootActionLeft = view.findViewById(R.id.dialog_with_two_buttons_root_left);
+        CardView rootActionRight = view.findViewById(R.id.dialog_with_two_buttons_root_right);
+
+        tvTitle.setText(title);
+        tvActionLeft.setText(lblPositive);
+        tvActionRight.setText(lblNegative);
+
+        AlertDialog alertDialog = alertDialogBuilder.show();
+
+        alertDialog.show();
+        alertDialog.setCancelable(false);
+        alertDialog.setCanceledOnTouchOutside(false);
+
+        rootActionLeft.setOnClickListener(viewLeft -> {
+            alertDialog.dismiss();
+            callBack.onPositiveClicked();
+        });
+
+        rootActionRight.setOnClickListener(viewRight -> {
+            alertDialog.dismiss();
+            callBack.onNegativeClicked();
+        });
+    }
+
+
     /**
      * Specified for BLE
      */
     public interface TwoButtonsCallBack {
 
-        void onPositiveClicked(BlocklyAlertState state);
+        void onPositiveClicked();
 
-        void onNegativeClicked(BlocklyAlertState state);
+        void onNegativeClicked();
     }
 
     public interface OneButtonCallBack {
-        void onButtonClicked(BlocklyAlertState state);
+        void onButtonClicked();
     }
 }

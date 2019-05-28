@@ -10,4 +10,4 @@ import androidx.room.PrimaryKey
  */
 @Entity(tableName = "ProjectEntity")
 class ProjectEntity(@field:PrimaryKey
-                    var id: String, var name: String?, var date: String?, var filePath: String?, var imgUrl: String?)
+                    var id: Long, var name: String?, var date: String?, var filePath: String?, var imgUrl: String?)

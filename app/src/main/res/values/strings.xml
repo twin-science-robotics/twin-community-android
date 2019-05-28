@@ -17,4 +17,13 @@
     <string name="lbl_success_connection">Successfully connected</string>
     <string name="warn_no_blocks">You need to add some blocks</string>
     <string name="lbl_js_infinite_loop">Code evaluation stopped due to reach loop limit</string>
+    <string name="title_name_dialog">Give your project a name</string>
+    <string name="warn_name_project">You must enter a name</string>
+    <string name="lbl_save">Save</string>
+    <string name="lbl_saved_success">Project saved successfully</string>
+    <string name="warn_orientation_not_supported">This device does not support orientation</string>
+    <string name="warn_scan_registration_fail">An error has occurred! Can you turn the Bluetooth of your device off and on again?</string>
+    <string name="lbl_timeout">Connection timed out. Please try again later.</string>
+    <string name="lbl_twin_disconnected">Connection lost</string>
+    <string name="lbl_dont_save">Don\'t Save</string>
 </resources>

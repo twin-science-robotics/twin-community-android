@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_margin="12dp"
+    android:orientation="vertical"
+    app:cardBackgroundColor="@color/white"
+    app:cardCornerRadius="8dp">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingStart="40dp"
+        android:paddingEnd="40dp"
+        android:paddingTop="40dp"
+        android:paddingBottom="35dp">
+
+
+        <TextView
+            android:id="@+id/dialog_name_tv_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginBottom="8dp"
+            android:fontFamily="@font/msr_700"
+            android:gravity="center_horizontal"
+            android:text="@string/title_name_dialog"
+            android:textColor="@color/greyish_brown"
+            android:textSize="@dimen/dialog_title"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/dialog_name_edit"
+            android:layout_width="315dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/dialog_name_tv_title"
+            android:background="@drawable/rounded_edit_bg"
+            android:fontFamily="@font/msr_300"
+            android:imeOptions="flagNoExtractUi"
+            android:inputType="text"
+            android:maxLength="15"
+            android:maxLines="1"
+            android:paddingStart="12dp"
+            android:paddingTop="10dp"
+            android:paddingEnd="12dp"
+            android:paddingBottom="10dp"
+            android:textColor="@color/greyish_brown"
+            android:cursorVisible="true"
+            android:textCursorDrawable="@color/light_navy_blue"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.45"/>
+
+
+        <com.google.android.material.card.MaterialCardView
+            android:id="@+id/dialog_name_root_cancel"
+            android:layout_width="150dp"
+            android:layout_height="45dp"
+            android:layout_marginTop="30dp"
+            android:layout_marginEnd="15dp"
+            android:layout_marginBottom="15dp"
+            android:layout_marginStart="15dp"
+            app:cardBackgroundColor="@color/greyish_brown"
+            app:cardCornerRadius="20dp"
+            app:cardElevation="8dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/guideline5"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/dialog_name_edit">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:fontFamily="@font/msr_700"
+                android:gravity="center_horizontal"
+                android:text="@string/lbl_cancel"
+                android:textColor="@color/white"
+                android:textSize="@dimen/dialog_button"/>
+
+
+        </com.google.android.material.card.MaterialCardView>
+
+
+        <com.google.android.material.card.MaterialCardView
+            android:id="@+id/dialog_name_root_save"
+            android:layout_width="150dp"
+            android:layout_height="45dp"
+            android:layout_marginStart="15dp"
+            android:layout_marginTop="30dp"
+            android:layout_marginBottom="15dp"
+            android:layout_marginEnd="15dp"
+            app:cardBackgroundColor="@color/aquamarine"
+            app:cardCornerRadius="20dp"
+            app:cardElevation="8dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="@+id/guideline5"
+            app:layout_constraintTop_toBottomOf="@+id/dialog_name_edit">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:fontFamily="@font/msr_700"
+                android:gravity="center_horizontal"
+                android:text="@string/lbl_save"
+                android:textColor="@color/white"
+                android:textSize="@dimen/dialog_button"/>
+
+
+        </com.google.android.material.card.MaterialCardView>
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guideline5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintGuide_percent="0.5" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.cardview.widget.CardView>

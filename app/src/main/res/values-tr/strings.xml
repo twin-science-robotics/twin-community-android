@@ -17,4 +17,13 @@
     <string name="lbl_success_connection">Bağlantı başarı ile gerçekleşti</string>
     <string name="warn_no_blocks">Çalışma alanında hiç blok bulunmuyor</string>
     <string name="lbl_js_infinite_loop">Döngü limitine ulaşıldığından çalışma durduruldu</string>
+    <string name="title_name_dialog">Projene isim ver</string>
+    <string name="warn_name_project">Kaydedeceğin projeye isim vermen gerekiyor</string>
+    <string name="lbl_save">Kaydet</string>
+    <string name="lbl_saved_success">Proje başarıyla kaydedildi</string>
+    <string name="warn_orientation_not_supported">Cihazın döndürülme hareketlerini desteklemiyor.</string>
+    <string name="warn_scan_registration_fail">Eyvah! Bir sorunla karşılaştık. Telefonun bluetoothunu kapatıp açmalısın.</string>
+    <string name="lbl_timeout">Bağlantı zaman aşımına uğradı. Lütfen tekrar dene.</string>
+    <string name="lbl_twin_disconnected">Bağlantı koptu</string>
+    <string name="lbl_dont_save">Kaydetme</string>
 </resources>
