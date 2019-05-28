@@ -2,6 +2,7 @@ package com.twinscience.twin.lite.android.di
 
 import android.app.Application
 import android.content.Context
+import com.twinscience.twin.lite.android.blockly.BlocklyFragment
 import com.twinscience.twin.lite.android.main.MainActivity
 import com.twinscience.twin.lite.android.db.DbModule
 import com.twinscience.twin.lite.android.project.HomeFragment
@@ -26,4 +27,5 @@ interface AppComponent {
     fun inject(homeFragment: HomeFragment)
     fun inject(myProjectsFragment: MyProjectsFragment)
     fun inject(twinProjectsFragment: TwinProjectsFragment)
+    fun inject(blocklyFragment: BlocklyFragment)
 }

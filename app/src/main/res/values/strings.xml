@@ -11,4 +11,10 @@
     <string name="lbl_settings">Settings</string>
     <string name="lbl_cancel">Cancel</string>
     <string name="title_bluetooth_settings">Bluetooth is not turned on</string>
+    <string name="title_dialog_back_blockly">The current project is not saved, \n whether to continue to exit ?</string>
+    <string name="lbl_scanning_twin">Searching nearby twins…</string>
+    <string name="lbl_ok">OK</string>
+    <string name="lbl_success_connection">Successfully connected</string>
+    <string name="warn_no_blocks">You need to add some blocks</string>
+    <string name="lbl_js_infinite_loop">Code evaluation stopped due to reach loop limit</string>
 </resources>

@@ -11,4 +11,10 @@
     <string name="lbl_settings">Settings</string>
     <string name="lbl_cancel">Vazgeç</string>
     <string name="title_bluetooth_settings">Devam etmek için cihazının Bluetooth Özelliği\'ni açman gerekiyor</string>
+    <string name="title_dialog_back_blockly">Değişiklikler kaydedilmedi, \n projeyi kaydetmek \n ister misin?</string>
+    <string name="lbl_scanning_twin">Yakınlardaki twinler aranıyor</string>
+    <string name="lbl_ok">Tamam</string>
+    <string name="lbl_success_connection">Bağlantı başarı ile gerçekleşti</string>
+    <string name="warn_no_blocks">Çalışma alanında hiç blok bulunmuyor</string>
+    <string name="lbl_js_infinite_loop">Döngü limitine ulaşıldığından çalışma durduruldu</string>
 </resources>

@@ -2,6 +2,7 @@ package com.twinscience.twin.lite.android.viewmodel
 
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.ViewModelProvider
+import com.twinscience.twin.lite.android.blockly.BlocklyViewModel
 import com.twinscience.twin.lite.android.main.MainViewModel
 import com.twinscience.twin.lite.android.project.HomeViewModel
 import com.twinscience.twin.lite.android.project.MyProjectsViewModel
@@ -45,5 +46,10 @@ abstract class ViewModelModule {
     @IntoMap
     @ViewModelKey(TwinProjectsViewModel::class)
     abstract fun bindTwinProjectsViewModel(viewModel: TwinProjectsViewModel): ViewModel
+
+    @Binds
+    @IntoMap
+    @ViewModelKey(BlocklyViewModel::class)
+    abstract fun bindBlocklyViewModel(viewModel: BlocklyViewModel): ViewModel
 
 }

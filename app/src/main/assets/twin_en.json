@@ -1,0 +1,814 @@
+[
+  {
+    "type": "start_play",
+    "message0": "start      ",
+    "nextStatement": null,
+    "colour": "#4D97FF",
+    "tooltip": "",
+    "helpUrl": ""
+  },
+  {
+    "type": "actionDCMotor",
+    "message0": "DC motor %1  velocity %2",
+    "args0": [
+      {
+        "type": "field_dropdown",
+        "name": "output",
+        "options": [
+          [
+            "d6",
+            "6"
+          ],
+          [
+            "d9",
+            "9"
+          ],
+          [
+            "d10",
+            "10"
+          ]
+        ]
+      },
+      {
+        "type": "field_number",
+        "name": "velocity",
+        "value": 0,
+        "min": 0,
+        "max": 100,
+        "precision": 20
+      }
+    ],
+    "previousStatement": null,
+    "nextStatement": null,
+    "colour": "#D65CD6",
+    "tooltip": "",
+    "helpUrl": ""
+  },
+  {
+    "type": "actionServoMotor",
+    "message0": "servo %1 angle %2",
+    "args0": [
+      {
+        "type": "field_dropdown",
+        "name": "output",
+        "options": [
+          [
+            "d6",
+            "6"
+          ],
+          [
+            "d9",
+            "9"
+          ],
+          [
+            "d10",
+            "10"
+          ]
+        ]
+      },
+      {
+        "type": "field_number",
+        "name": "angle",
+        "value": 0,
+        "min": 0,
+        "max": 360,
+        "precision": 1
+      }
+    ],
+    "previousStatement": null,
+    "nextStatement": null,
+    "colour": "#D65CD6",
+    "tooltip": "",
+    "helpUrl": ""
+  },
+  {
+    "type": "lightSoundBarGraph",
+    "message0": "bargraph %1 level %2",
+    "args0": [
+      {
+        "type": "field_dropdown",
+        "name": "output",
+        "options": [
+          [
+            "d6",
+            "6"
+          ],
+          [
+            "d9",
+            "9"
+          ],
+          [
+            "d10",
+            "10"
+          ]
+        ]
+      },
+      {
+        "type": "field_dropdown",
+        "name": "level",
+        "options": [
+          [
+            "0",
+            "0"
+          ],
+          [
+            "1",
+            "1"
+          ],
+          [
+            "2",
+            "2"
+          ],
+          [
+            "3",
+            "3"
+          ],
+          [
+            "4",
+            "4"
+          ],
+          [
+            "5",
+            "5"
+          ]
+        ]
+      }
+    ],
+    "previousStatement": null,
+    "nextStatement": null,
+    "colour": "#F55D3D",
+    "tooltip": "",
+    "helpUrl": ""
+  },
+  {
+    "type": "lightSoundTripleRGBLed",
+    "message0": "rgb leds 7.1 %1 7.2 %2 7.3 %3",
+    "args0": [
+      {
+        "type": "field_colour",
+        "name": "7_1_rgb",
+        "colour": "#ff0000"
+      },
+      {
+        "type": "field_colour",
+        "name": "7_2_rgb",
+        "colour": "#00ff00"
+      },
+      {
+        "type": "field_colour",
+        "name": "7_3_rgb",
+        "colour": "#0000ff"
+      }
+    ],
+    "previousStatement": null,
+    "nextStatement": null,
+    "colour": "#F55D3D",
+    "tooltip": "",
+    "helpUrl": ""
+  },
+  {
+    "type": "lightSoundLongLed",
+    "message0": "led %1 status %2",
+    "args0": [
+      {
+        "type": "field_dropdown",
+        "name": "output",
+        "options": [
+          [
+            "d6",
+            "6"
+          ],
+          [
+            "d9",
+            "9"
+          ],
+          [
+            "d10",
+            "10"
+          ]
+        ]
+      },
+      {
+        "type": "field_dropdown",
+        "name": "status",
+        "options": [
+          [
+            "on",
+            "1"
+          ],
+          [
+            "off",
+            "0"
+          ]
+        ]
+      }
+    ],
+    "previousStatement": null,
+    "nextStatement": null,
+    "colour": "#F55D3D",
+    "tooltip": "",
+    "helpUrl": ""
+  },
+  {
+    "type": "lightSoundBuzzerNote",
+    "message0": "buzzer %1 note %2",
+    "args0": [
+      {
+        "type": "field_dropdown",
+        "name": "output",
+        "options": [
+          [
+            "d6",
+            "6"
+          ],
+          [
+            "d8",
+            "8"
+          ],
+          [
+            "d9",
+            "9"
+          ],
+          [
+            "d10",
+            "10"
+          ]
+        ]
+      },
+      {
+        "type": "field_dropdown",
+        "name": "note",
+        "options": [
+          [
+            "do",
+            "0"
+          ],
+          [
+            "re",
+            "1"
+          ],
+          [
+            "mi",
+            "2"
+          ],
+          [
+            "fa",
+            "3"
+          ],
+          [
+            "sol",
+            "4"
+          ],
+          [
+            "la",
+            "5"
+          ],
+          [
+            "si",
+            "6"
+          ]
+        ]
+      }
+    ],
+    "previousStatement": null,
+    "nextStatement": null,
+    "colour": "#F55D3D",
+    "tooltip": "",
+    "helpUrl": ""
+  },
+  {
+    "type": "lightSoundBuzzerMusic",
+    "message0": "buzzer %1 play %2",
+    "args0": [
+      {
+        "type": "field_dropdown",
+        "name": "output",
+        "options": [
+          [
+            "d6",
+            "6"
+          ],
+          [
+            "d8",
+            "8"
+          ],
+          [
+            "d9",
+            "9"
+          ],
+          [
+            "d10",
+            "10"
+          ]
+        ]
+      },
+      {
+        "type": "field_dropdown",
+        "name": "music",
+        "options": [
+          [
+            "star wars",
+            "0"
+          ],
+          [
+            "game of thrones",
+            "1"
+          ],
+          [
+            "happy birthday",
+            "2"
+          ],
+          [
+            "harry potter",
+            "3"
+          ],
+          [
+            "pirates of the caribbean",
+            "4"
+          ],
+          [
+            "super mario",
+            "5"
+          ],
+          [
+            "national anthem song",
+            "6"
+          ],
+          [
+            "star wars 2",
+            "7"
+          ],
+          [
+            "despasito",
+            "8"
+          ]
+        ]
+      }
+    ],
+    "previousStatement": null,
+    "nextStatement": null,
+    "colour": "#F55D3D",
+    "tooltip": "",
+    "helpUrl": ""
+  },
+  {
+    "type": "conditionDeviceShakeStatus",
+    "message0": "when device shaked",
+    "output": null,
+    "colour": "#E3008B",
+    "tooltip": "",
+    "helpUrl": ""
+  },
+  {
+    "type": "conditionDeviceOrientation",
+    "message0": "when device rotated to %1",
+    "args0": [
+      {
+        "type": "field_dropdown",
+        "name": "orientation",
+        "options": [
+          [
+            "right",
+            "right"
+          ],
+          [
+            "left",
+            "left"
+          ],
+          [
+            "down",
+            "down"
+          ],
+          [
+            "up",
+            "up"
+          ]
+        ]
+      }
+    ],
+    "output": null,
+    "colour": "#E3008B",
+    "tooltip": "",
+    "helpUrl": ""
+  },
+  {
+    "type": "detectData",
+    "message0": "input %1 detect %2",
+    "args0": [
+      {
+        "type": "field_dropdown",
+        "name": "input",
+        "options": [
+          [
+            "d4",
+            "4"
+          ],
+          [
+            "d8",
+            "8"
+          ],
+          [
+            "d12",
+            "12"
+          ]
+        ]
+      },
+      {
+        "type": "field_dropdown",
+        "name": "dataType",
+        "options": [
+          [
+            "movement",
+            "movement"
+          ],
+          [
+            "light",
+            "light"
+          ],
+          [
+            "sound",
+            "sound"
+          ]
+        ]
+      }
+    ],
+    "output": null,
+    "colour": "#FFAB1A",
+    "tooltip": "",
+    "helpUrl": ""
+  },
+  {
+    "type": "detectButtonPress",
+    "message0": "when button %1 pressed",
+    "args0": [
+      {
+        "type": "field_dropdown",
+        "name": "input",
+        "options": [
+          [
+            "d4",
+            "4"
+          ],
+          [
+            "d8",
+            "8"
+          ],
+          [
+            "d12",
+            "12"
+          ]
+        ]
+      }
+    ],
+    "output": null,
+    "colour": "#FFAB1A",
+    "tooltip": "",
+    "helpUrl": ""
+  },
+  {
+    "type": "detectRemoteControl",
+    "message0": "when remote control %1 detected signal",
+    "args0": [
+      {
+        "type": "field_dropdown",
+        "name": "input",
+        "options": [
+          [
+            "d4",
+            "4"
+          ],
+          [
+            "d8",
+            "8"
+          ],
+          [
+            "d12",
+            "12"
+          ]
+        ]
+      }
+    ],
+    "output": null,
+    "colour": "#FFAB1A",
+    "tooltip": "",
+    "helpUrl": ""
+  },
+  {
+    "type": "detectPotantiometer",
+    "message0": "when potantiometer %1 value",
+    "args0": [
+      {
+        "type": "field_dropdown",
+        "name": "input",
+        "options": [
+          [
+            "d4",
+            "4"
+          ],
+          [
+            "d8",
+            "8"
+          ],
+          [
+            "d12",
+            "12"
+          ]
+        ]
+      }
+    ],
+    "output": null,
+    "colour": "#FFAB1A",
+    "tooltip": "",
+    "helpUrl": ""
+  },
+  {
+    "type": "detectTouch",
+    "message0": "when wires %1 touched",
+    "args0": [
+      {
+        "type": "field_dropdown",
+        "name": "input",
+        "options": [
+          [
+            "d8",
+            "8"
+          ],
+          [
+            "d9",
+            "9"
+          ],
+          [
+            "d10",
+            "10"
+          ],
+          [
+            "d12",
+            "12"
+          ]
+        ]
+      }
+    ],
+    "output": null,
+    "colour": "#FFAB1A",
+    "tooltip": "",
+    "helpUrl": ""
+  },
+  {
+    "type": "detectUltrasonic",
+    "message0": "ultrasonic value (cm)",
+    "output": null,
+    "colour": "#FFAB1A",
+    "tooltip": "",
+    "helpUrl": ""
+  },
+  {
+    "type": "detectProximity",
+    "message0": "infrared proximity sensor %1 value",
+    "args0": [
+      {
+        "type": "field_dropdown",
+        "name": "input",
+        "options": [
+          [
+            "d4",
+            "4"
+          ],
+          [
+            "d8",
+            "8"
+          ],
+          [
+            "d12",
+            "12"
+          ]
+        ]
+      }
+    ],
+    "output": null,
+    "colour": "#FFAB1A",
+    "tooltip": "",
+    "helpUrl": ""
+  },
+  {
+    "type": "sleep",
+    "message0": "wait %1 s",
+    "args0": [
+      {
+        "type": "field_number",
+        "name": "duration",
+        "value": 1.0,
+        "min": 0.1,
+        "max": 60.0,
+        "precision": 0.1
+      }
+    ],
+    "previousStatement": null,
+    "nextStatement": null,
+    "colour": "#4CBFE6",
+    "tooltip": "",
+    "helpUrl": ""
+  },
+  {
+    "type": "field_angle_block",
+    "message0": "field_angle: %1",
+    "args0": [
+      {
+        "type": "field_angle",
+        "name": "angle",
+        "angle": 180
+      }
+    ],
+    "output": null,
+    "colour": "#EF6C00"
+  },
+  {
+    "type": "field_checkbox_block",
+    "message0": "field_checkbox: %1",
+    "args0": [
+      {
+        "type": "field_checkbox",
+        "name": "checkbox",
+        "checked": false
+      }
+    ],
+    "output": null,
+    "colour": "#EF6C00"
+  },
+  {
+    "type": "field_colour_block",
+    "message0": "field_colour: %1",
+    "args0": [
+      {
+        "type": "field_colour",
+        "name": "colour",
+        "colour": "#008000"
+      }
+    ],
+    "output": null,
+    "colour": "#EF6C00"
+  },
+  {
+    "type": "field_date_block",
+    "message0": "field_date: %1",
+    "args0": [
+      {
+        "type": "field_date",
+        "name": "date",
+        "date": "1997-08-29"
+      }
+    ],
+    "output": null,
+    "colour": "#EF6C00"
+  },
+  {
+    "type": "field_dropdown_block",
+    "message0": "field_dropdown: %1",
+    "args0": [
+      {
+        "type": "field_dropdown",
+        "name": "Dropdown",
+        "options": [
+          [
+            "Blockly",
+            "Blockly"
+          ],
+          [
+            "Google",
+            "Google"
+          ]
+        ]
+      }
+    ],
+    "output": null,
+    "colour": "#EF6C00"
+  },
+  {
+    "type": "field_input_block",
+    "message0": "field_input: %1",
+    "args0": [
+      {
+        "type": "field_input",
+        "name": "Input",
+        "text": ""
+      }
+    ],
+    "output": null,
+    "colour": "#EF6C00"
+  },
+  {
+    "type": "field_image_local_block",
+    "message0": "field_image (from local image): %1",
+    "args0": [
+      {
+        "type": "field_image",
+        "name": "local_camera_image",
+        "text": "",
+        "src": "camera",
+        "width": 30,
+        "height": 30
+      }
+    ],
+    "output": null,
+    "colour": "#EF6C00"
+  },
+  {
+    "type": "field_image_web_block",
+    "message0": "field_image (from web URL): %1",
+    "args0": [
+      {
+        "type": "field_image",
+        "name": "web_star_image",
+        "text": "",
+        "src": "https://www.gstatic.com/codesite/ph/images/star_on.gif",
+        "width": 15,
+        "height": 15
+      }
+    ],
+    "output": null,
+    "colour": "#EF6C00"
+  },
+  {
+    "type": "field_label_block",
+    "message0": "field_label: %1",
+    "args0": [
+      {
+        "type": "field_label",
+        "name": "TEXT",
+        "text": "<FIELD LABEL TEXT HERE>"
+      }
+    ],
+    "output": null,
+    "colour": "#EF6C00"
+  },
+  {
+    "type": "field_number_nonconstrained_block",
+    "message0": "field_number (unconstrained `Double`): %1",
+    "args0": [
+      {
+        "type": "field_number",
+        "name": "number"
+      }
+    ],
+    "output": null,
+    "colour": "#EF6C00"
+  },
+  {
+    "type": "field_number_integer_block",
+    "message0": "field_number (integer): %1",
+    "args0": [
+      {
+        "type": "field_number",
+        "name": "number",
+        "precision": 1,
+        "min": 0
+      }
+    ],
+    "output": null,
+    "colour": "#EF6C00"
+  },
+  {
+    "type": "field_number_currency_block",
+    "message0": "field_number (currency): %1",
+    "args0": [
+      {
+        "type": "field_number",
+        "name": "currency",
+        "precision": 0.01
+      }
+    ],
+    "output": null,
+    "colour": "#EF6C00"
+  },
+  {
+    "type": "field_number_constrained_block",
+    "message0": "field_number (constrained to [-50.0, 50.0]): %1",
+    "args0": [
+      {
+        "type": "field_number",
+        "name": "constrained_decimal",
+        "precision": 0.1,
+        "min": -50,
+        "max": 50
+      }
+    ],
+    "output": null,
+    "colour": "#EF6C00"
+  },
+  {
+    "type": "field_variable_block",
+    "message0": "field_variable: %1",
+    "args0": [
+      {
+        "type": "field_variable",
+        "name": "VAR",
+        "variable": "variable1"
+      }
+    ],
+    "output": null,
+    "colour": "#EF6C00",
+    "tooltip": "Returns the value of this variable.",
+    "helpUrl": "https://github.com/google/blockly/wiki/Variables#get"
+  }
+]
+
+
