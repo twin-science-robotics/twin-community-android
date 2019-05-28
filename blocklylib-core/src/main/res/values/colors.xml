@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="translucent">#98ffffff</color>
+    <color name="white">#fff</color>
+
+    <color name="blockly_toolbox_bg">#80FFFFFF</color>
+    <color name="blockly_trash_bg">#664c4c4c</color>
+    <color name="blockly_edit_text_bg">#80ffffff</color>
+    <color name="blockly_spinner_dropdown_bg">#ffeeeeee</color>
+    <color name="very_light_pink">#cccccc</color>
+    <color name="aquamarine">#CC03D8C8</color>
+    <color name="grey_bg">#f2f2f2</color>
+    <color name="lightblue">#6dc3ed</color>
+    <color name="light_navy_blue">#293d7c</color>
+    <color name="yellowish_orange">#ffaf10</color>
+    <color name="greyish_brown_45">#734c4c4c</color>
+    <color name="pale_turquoise">#9dfcec</color>
+    <color name="darker_gray">#ebebeb</color>
+    <color name="greyish_brown">#4c4c4c</color>
+    <color name="salmon_pink">#ff787f</color>
+    <color name="white_two">#f0f0f0</color>
+    <color name="wheat">#ffd782</color>
+    <color name="pale_purple">#b69ad6</color>
+    <color name="teal">#05968b</color>
+    <color name="light_blue_grey">#d0efed</color>
+    <color name="greyish_brown_40">#664c4c4c</color>
+    <color name="greyish_brown_50">#804c4c4c</color>
+    <color name="white_three">#fefefe</color>
+    <color name="dark_gray">#252525</color>
+    <color name="blockly_start_color">#4D97FF</color>
+    <color name="blockly_movement_color">#D65CD6</color>
+    <color name="blockly_light_and_sound_color">#F55D3D</color>
+    <color name="blockly_condition_color">#E3008B</color>
+    <color name="blockly_detect_color">#FFAB1A</color>
+    <color name="blockly_logic_color">#4CBFE6</color>
+    <color name="blockly_loop_color">#EF2D56</color>
+    <color name="blockly_math_color">#FF6680</color>
+    <color name="blockly_variable_color">#9966FF</color>
+    <color name="blockly_fun_color">#40BF4B</color>
+    <color name="block_flyout_bg">#B3FFFFFF</color>
+</resources>

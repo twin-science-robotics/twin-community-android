@@ -96,8 +96,8 @@ dependencies {
     //Retrofit
     implementation deps.retrofit.moshi
     //Blockly
-/*    implementation project(':blocklylib-core')
-    implementation project(':blocklylib-vertical')*/
+    implementation project(':blocklylib-core')
+    implementation project(':blocklylib-vertical')
     //Independent Libs
     implementation deps.seismic
 

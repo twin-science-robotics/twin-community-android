@@ -1,0 +1,145 @@
+[
+  {
+    "type": "controls_repeat_ext",
+    "message0": "%1 kez tekrarla %2 %3 yap",
+    "args0": [
+      {
+        "type": "input_value",
+        "name": "TIMES"
+      },
+      {
+        "type": "input_dummy"
+      },
+      {
+        "type": "input_statement",
+        "name": "DO"
+      }
+    ],
+    "previousStatement": null,
+    "nextStatement": null,
+    "colour": "#EF2D56",
+    "inputsInline": true,
+    "tooltip": "Do some statements several times.",
+    "helpUrl": "https://en.wikipedia.org/wiki/For_loop"
+  },
+  {
+    "type": "controls_whileUntil",
+    "message0": "%1 %2 %3 yap",
+    "args0": [
+      {
+        "type": "field_dropdown",
+        "name": "MODE",
+        "options": [
+          [
+            "tekrar ederken",
+            "WHILE"
+          ],
+          [
+            "kadar tekrarla",
+            "UNTIL"
+          ]
+        ]
+      },
+      {
+        "type": "input_value",
+        "name": "BOOL",
+        "check": "Boolean"
+      },
+      {
+        "type": "input_statement",
+        "name": "DO"
+      }
+    ],
+    "previousStatement": null,
+    "nextStatement": null,
+    "colour": "#EF2D56",
+    "tooltip": "While a value is false, then do some statements.",
+    "helpUrl": "https://github.com/google/blockly/wiki/Loops#repeat"
+  },
+  {
+    "type": "controls_for",
+    "message0": "%1 değerini, %2 ve %3 arasında, her adımda %4 değiştir ve yap %5",
+    "args0": [
+      {
+        "type": "field_variable",
+        "name": "VAR",
+        "variable": null
+      },
+      {
+        "type": "input_value",
+        "name": "FROM",
+        "check": "Number",
+        "align": "RIGHT"
+      },
+      {
+        "type": "input_value",
+        "name": "TO",
+        "check": "Number",
+        "align": "RIGHT"
+      },
+      {
+        "type": "input_value",
+        "name": "BY",
+        "check": "Number",
+        "align": "RIGHT"
+      },
+      {
+        "type": "input_statement",
+        "name": "DO"
+      }
+    ],
+    "inputsInline": true,
+    "previousStatement": null,
+    "nextStatement": null,
+    "colour": "#EF2D56",
+    "helpUrl": "https://github.com/google/blockly/wiki/Loops#count-with"
+  },
+  {
+    "type": "controls_forEach",
+    "message0": "her öğe için %1 listede %2 yap %3",
+    "args0": [
+      {
+        "type": "field_variable",
+        "name": "VAR",
+        "variable": null
+      },
+      {
+        "type": "input_value",
+        "name": "LIST",
+        "check": "Array"
+      },
+      {
+        "type": "input_statement",
+        "name": "DO"
+      }
+    ],
+    "previousStatement": null,
+    "nextStatement": null,
+    "colour": "#EF2D56",
+    "helpUrl": "https://github.com/google/blockly/wiki/Loops#for-each"
+  },
+  {
+    "type": "controls_flow_statements",
+    "message0": "%1",
+    "args0": [
+      {
+        "type": "field_dropdown",
+        "name": "FLOW",
+        "options": [
+          [
+            "döngüden çık",
+            "BREAK"
+          ],
+          [
+            "döngünün sonraki adımından devam et",
+            "CONTINUE"
+          ]
+        ]
+      }
+    ],
+    "previousStatement": null,
+    "colour": "#EF2D56",
+    "helpUrl": "https://github.com/google/blockly/wiki/Loops#loop-termination-blocks",
+    "TODO(#375)": "https://github.com/google/blockly-android/issues/375"
+  }
+]

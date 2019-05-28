@@ -1,0 +1,142 @@
+<!--
+ ~  Copyright 2016 Google Inc. All Rights Reserved.
+ ~  Licensed under the Apache License, Version 2.0 (the "License");
+ ~  you may not use this file except in compliance with the License.
+ ~  You may obtain a copy of the License at
+ ~
+ ~   http://www.apache.org/licenses/LICENSE-2.0
+ ~
+ ~  Unless required by applicable law or agreed to in writing, software
+ ~  distributed under the License is distributed on an "AS IS" BASIS,
+ ~  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ ~  See the License for the specific language governing permissions and
+ ~  limitations under the License.
+ -->
+
+<xml>
+    <category name="Başla" colour="#4D97FF" icon="basla.png">
+        <block type="start_play"></block>
+    </category>
+    <category name="Hareket" colour="#D65CD6" icon="hareket.png">
+        <block type="actionDCMotor"></block>
+        <block type="actionServoMotor"></block>
+    </category>
+    <category name="Işık ve Ses" colour="#F55D3D" icon="isik.png">
+        <block type="lightSoundBarGraph"></block>
+        <block type="lightSoundTripleRGBLed"></block>
+        <block type="lightSoundLongLed"></block>
+        <block type="lightSoundBuzzerNote"></block>
+        <block type="lightSoundBuzzerMusic"></block>
+    </category>
+    <category name="Cihaz" colour="#E3008B" icon="kosul.png">
+        <block type="conditionDeviceShakeStatus"></block>
+        <block type="conditionDeviceOrientation"></block>
+    </category>
+    <category name="Algıla" colour="#FFAB1A" icon="algila.png">
+        <block type="detectData"></block>
+        <block type="detectButtonPress"></block>
+        <block type="detectRemoteControl"></block>
+        <block type="detectPotantiometer"></block>
+        <block type="detectTouch"></block>
+        <block type="detectUltrasonic"></block>
+        <block type="detectProximity"></block>
+    </category>
+    <category name="Mantık" colour="%{BKY_LOGIC_HUE}" icon="mantik.png">
+        <block type="sleep"></block>
+        <block type="controls_if"></block>
+        <block type="logic_compare">
+            <field name="OP">EQ</field>
+        </block>
+        <block type="logic_operation">
+            <field name="OP">AND</field>
+        </block>
+        <block type="logic_negate"></block>
+        <block type="logic_boolean">
+            <field name="BOOL">TRUE</field>
+        </block>
+        <block type="logic_null"></block>
+        <block type="logic_ternary"></block>
+    </category>
+    <category name="Döngü" colour="%{BKY_LOOPS_HUE}" icon="dongu.png">
+        <block type="controls_whileUntil">
+            <field name="MODE">WHILE</field>
+        </block>
+        <block type="controls_for">
+            <field name="VAR" id="qH:oopiG;9K![WL+](sJ" variabletype="">i</field>
+            <value name="FROM">
+                <shadow type="math_number">
+                    <field name="NUM">1</field>
+                </shadow>
+            </value>
+            <value name="TO">
+                <shadow type="math_number">
+                    <field name="NUM">10</field>
+                </shadow>
+            </value>
+            <value name="BY">
+                <shadow type="math_number">
+                    <field name="NUM">1</field>
+                </shadow>
+            </value>
+        </block>
+        <block type="controls_repeat_ext">
+            <value name="TIMES">
+                <shadow type="math_number">
+                    <field name="NUM">10</field>
+                </shadow>
+            </value>
+        </block>
+        <block type="controls_flow_statements">
+            <field name="FLOW">BREAK</field>
+        </block>
+    </category>
+    <category name="Matematik" colour="%{BKY_MATH_HUE}" icon="matematik.png">
+        <block type="math_number"></block>
+        <block type="math_arithmetic">
+            <value name="A">
+                <shadow type="math_number">
+                    <field name="NUM">1</field>
+                </shadow>
+            </value>
+            <value name="B">
+                <shadow type="math_number">
+                    <field name="NUM">1</field>
+                </shadow>
+            </value>
+        </block>
+        <block type="math_round">
+            <value name="NUM">
+                <shadow type="math_number">
+                    <field name="NUM">3.1</field>
+                </shadow>
+            </value>
+        </block>
+        <block type="math_modulo">
+            <value name="DIVIDEND">
+                <shadow type="math_number">
+                    <field name="NUM">64</field>
+                </shadow>
+            </value>
+            <value name="DIVISOR">
+                <shadow type="math_number">
+                    <field name="NUM">10</field>
+                </shadow>
+            </value>
+        </block>
+        <block type="math_random_int">
+            <value name="FROM">
+                <shadow type="math_number">
+                    <field name="NUM">1</field>
+                </shadow>
+            </value>
+            <value name="TO">
+                <shadow type="math_number">
+                    <field name="NUM">100</field>
+                </shadow>
+            </value>
+        </block>
+        <block type="math_random_float"></block>
+    </category>
+    <category name="Değişken" colour="%{BKY_VARIABLES_HUE}" icon="degisken.png" custom="VARIABLE" />
+    <!--<category name="Fonksiyon" colour="%{BKY_PROCEDURES_HUE}" icon="fonksiyon.png" custom="PROCEDURE" />-->
+</xml>

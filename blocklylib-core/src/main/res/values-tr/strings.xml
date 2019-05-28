@@ -1,0 +1,66 @@
+<resources>
+    <string name="app_name">Blockly</string>
+
+    <string name="title_section1">Section 1</string>
+    <string name="title_section2">Section 2</string>
+    <string name="title_section3">Section 3</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <string name="action_settings">Settings</string>
+    <string name="action_save">Save</string>
+    <string name="action_load">Load</string>
+    <string name="action_clear">Clear</string>
+    <string name="action_airstrike">Airstrike</string>
+    <string name="action_carpet_bomb">Carpet Bomb</string>
+    <string name="action_spaghetti">Spaghetti</string>
+    <string name="action_run">Run</string>
+
+    <string name="toast_workspace_saved">Saved workspace contents.</string>
+    <string name="toast_workspace_not_saved">Couldn\'t save workspace.</string>
+    <string name="toast_workspace_file_not_found">Couldn\'t find saved workspace.</string>
+    <string name="toast_workspace_load_failed">Failed to load workspace.</string>
+
+    <string name="blockly_toolbox_default_category_name">bloklar</string>
+    <string name="rename_variable">değişken adını değiştir\u2026"</string>
+    <string name="delete_variable">değişkeni sil\u2026"</string>
+    <string name="create_variable">değişken ekle</string>
+    <string name="delete_variable_title">değişkeni sil</string>
+    <!-- Confirmation message shown if a user is deleting a variable with more than 1 block that
+         uses it. -->
+    <string name="delete_variable_confirm">Delete variable %1$s and %2$d blocks using it?</string>
+    <string name="delete_variable_positive">Sil</string>
+    <string name="delete_variable_negative">Vazgeç</string>
+    <!-- Message shown when creating or renaming a variable. -->
+    <string name="name_variable_title">Değişken Adı</string>
+    <string name="name_variable_message">Yeni değişken adı</string>
+    <string name="rename_variable_message">Değişken adını şundan değiştir: "%s"</string>
+    <string name="name_variable_positive">Tamam</string>
+    <string name="name_variable_negative">Vazgeç</string>
+    <!-- Message shown when variable is used as a procedure argument. -->
+    <string name="cannot_delete_variable_procedure">Can\'t delete the variable \"%1$s\" because it\'s part of the definition of the function \"%2$s\".</string>
+
+    <string name="blockly_clipdata_label_default">Blockly blocks</string>
+    <string name="mutator_icon_alt_text">Modify the block\'s shape.</string>
+    <string name="mutator_done">Done</string>
+
+    <string name="mutator_ifelse_edit_title">Bloğu düzenle</string>
+    <string name="mutator_ifelse_edit_ifelse_count">“eğer” sayısı: %d</string>
+    <string name="mutator_ifelse_edit_has_else">Son “değilse” ifadesi?</string>
+    <string name="mutator_ifelse_label_if">eğer</string>
+    <string name="mutator_ifelse_label_else_if">değilse eğer</string>
+    <string name="mutator_ifelse_label_then">yap</string>
+    <string name="mutator_ifelse_label_else">değilse</string>
+
+    <string name="mutator_procedure_def_title">Fonksiyon girdileri</string>
+    <string name="mutator_procedure_def_header_format">%1$s fonksiyonu ile:</string>
+    <string name="mutator_procedure_def_before_params">ile:</string>
+
+    <string name="blockly_default_function_name">Bir Şey Yap</string>
+    <string name="procedure_argument_name_hint">Parametre ismi</string>
+    <string name="procedure_argument_delete_hint">Parametreyi sil</string>
+    <string name="procedure_argument_add_label">Parametre ekle</string>
+
+    <string name="lbl_back">Geri</string>
+</resources>

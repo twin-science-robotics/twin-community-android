@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/toolbox_tab_root"
+    android:layout_width="154dp"
+    android:layout_height="52dp"
+    android:background="@color/white">
+
+    <View
+        android:id="@+id/toolbox_tab_view"
+        android:layout_width="8dp"
+        android:layout_height="match_parent" />
+
+
+    <ImageView
+        android:id="@+id/toolbox_tab_image"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:layout_gravity="center"
+        android:layout_marginStart="5dp"
+        android:layout_marginEnd="5dp"
+        android:contentDescription="@null"
+        android:gravity="center" />
+
+    <TextView
+        android:id="@+id/toolbox_tab_tv"
+        android:layout_width="136dp"
+        android:layout_height="52dp"
+        android:layout_gravity="center"
+        android:fontFamily="@font/msr_700"
+        android:gravity="center_vertical|start"
+        android:maxLines="1"
+        android:paddingTop="10dp"
+        android:layout_marginEnd="1dp"
+        android:paddingBottom="10dp"
+        android:textSize="@dimen/toolbox_lbl_size"
+        tools:text="Light And Sound" />
+
+</LinearLayout>

@@ -24,9 +24,5 @@ class MainActivity : AppCompatActivity() {
         TwinLiteApplication.getAppComponent(this)?.inject(this)
     }
 
-    override fun onSupportNavigateUp() = findNavController(
-        this,
-        R.id.nav_host_fragment
-    ).navigateUp()
-
+    override fun onSupportNavigateUp() = findNavController(this, R.id.nav_host_fragment).navigateUp()
 }

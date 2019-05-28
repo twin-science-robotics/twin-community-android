@@ -1,0 +1,214 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:blockly="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <LinearLayout
+        android:id="@+id/blockly_btn_back"
+        android:layout_width="154dp"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:paddingStart="20dp"
+        android:paddingEnd="10dp">
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/unified_btn_back"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:layout_margin="10dp"
+            app:cardBackgroundColor="@color/very_light_pink"
+            app:cardCornerRadius="16dp"
+            app:cardElevation="7dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:drawableStart="@drawable/btn_back"
+                android:drawablePadding="10dp"
+                android:fontFamily="@font/msr_700"
+                android:gravity="center"
+                android:paddingStart="10.5dp"
+                android:paddingTop="8.5dp"
+                android:paddingEnd="10.5dp"
+                android:paddingBottom="8.5dp"
+                android:text="@string/lbl_back"
+                android:textColor="@color/white"
+                android:textSize="17sp" />
+
+        </androidx.cardview.widget.CardView>
+
+
+    </LinearLayout>
+
+
+    <fragment
+        android:id="@+id/blockly_categories"
+        android:name="com.google.blockly.android.CategorySelectorFragment"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/blockly_root_top"
+        android:layout_alignEnd="@+id/blockly_btn_back"
+        android:layout_alignParentStart="true"
+        blockly:labelRotation="none"
+        blockly:scrollOrientation="vertical"
+        tools:ignore="MissingPrefix" />
+
+
+    <LinearLayout
+        android:id="@+id/blockly_root_top"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@android:color/transparent"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <View
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1" />
+
+
+        <ImageButton
+            android:id="@+id/btn_experiment_menu"
+            android:layout_width="54dp"
+            android:layout_height="54dp"
+            android:background="@drawable/circle_aquamarine_bg"
+            android:contentDescription="@null"
+            android:scaleType="centerInside"
+            android:visibility="invisible"
+            blockly:srcCompat="@drawable/ic_experiment_menu" />
+
+
+    </LinearLayout>
+
+    <WebView
+        android:id="@+id/blockly_mock_web_view"
+        android:layout_width="300dp"
+        android:layout_height="150dp"
+        android:layout_centerInParent="true"
+        android:visibility="invisible" />
+
+
+    <com.google.blockly.android.ui.TrashCanView
+        android:id="@+id/blockly_trash_icon"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignTop="@+id/blockly_categories"
+        android:layout_alignEnd="@+id/blockly_btn_back"
+        android:layout_alignParentStart="true"
+        android:layout_centerVertical="true"
+        android:scaleType="centerInside"
+        android:src="@drawable/ic_trash" />
+
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_toEndOf="@id/blockly_categories"
+        android:background="@color/grey_bg"
+        android:contentDescription="@null"
+        android:scaleType="centerCrop"
+        android:src="@drawable/vector_smart_object_copy" />
+
+
+    <TextView
+        android:id="@+id/blockly_tv_project_name"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_alignBottom="@+id/blockly_root_top"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:fontFamily="@font/msr_900"
+        android:gravity="center"
+        android:textColor="@color/dark_gray"
+        android:textSize="21sp"
+        tools:text="Emergency Light" />
+
+
+    <fragment
+        android:id="@+id/blockly_workspace"
+        android:name="com.google.blockly.android.WorkspaceFragment"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignTop="@+id/blockly_categories"
+        android:layout_toEndOf="@+id/blockly_categories"
+        android:background="@android:color/transparent" />
+
+    <ImageButton
+        android:id="@+id/btn_experiment_save"
+        android:layout_width="54dp"
+        android:layout_height="54dp"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="3dp"
+        android:layout_marginEnd="84dp"
+        android:background="@drawable/circle_aquamarine_bg"
+        android:contentDescription="@null"
+        android:scaleType="centerInside"
+        blockly:srcCompat="@drawable/ic_experiment_save" />
+
+
+    <ImageButton
+        android:id="@+id/btn_experiment_play"
+        android:layout_width="54dp"
+        android:layout_height="54dp"
+        android:layout_alignParentEnd="true"
+        android:layout_gravity="center"
+        android:layout_marginTop="3dp"
+        android:layout_marginEnd="20dp"
+        android:background="@drawable/circle_aquamarine_bg"
+        android:contentDescription="@null"
+        android:paddingStart="27dp"
+        android:paddingTop="24dp"
+        android:paddingEnd="24dp"
+        android:paddingBottom="24dp"
+        blockly:srcCompat="@drawable/ic_experiment_start" />
+
+    <ImageButton
+        android:id="@+id/btn_experiment_stop"
+        android:layout_width="54dp"
+        android:layout_height="54dp"
+        android:layout_alignParentEnd="true"
+        android:layout_gravity="center"
+        android:layout_marginTop="3dp"
+        android:layout_marginEnd="20dp"
+        android:background="@drawable/circle_aquamarine_bg"
+        android:contentDescription="@null"
+        android:paddingStart="24dp"
+        android:paddingTop="24dp"
+        android:paddingEnd="24dp"
+        android:paddingBottom="24dp"
+        android:src="@drawable/stop"
+        android:visibility="gone" />
+
+    <fragment
+        android:id="@+id/blockly_trash_ui"
+        android:name="com.google.blockly.android.FlyoutFragment"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/blockly_root_top"
+        android:layout_alignParentBottom="true"
+        android:layout_toEndOf="@id/blockly_categories"
+        blockly:closeable="true"
+        blockly:scrollOrientation="horizontal"
+        tools:ignore="MissingPrefix" />
+
+    <fragment
+        android:id="@+id/blockly_toolbox_ui"
+        android:name="com.google.blockly.android.FlyoutFragment"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_toEndOf="@id/blockly_categories"
+        android:background="@android:color/transparent"
+        android:layout_alignTop="@+id/blockly_categories"
+        blockly:closeable="true"
+        blockly:scrollOrientation="vertical"
+        tools:ignore="MissingPrefix" />
+
+
+</RelativeLayout>
